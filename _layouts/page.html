@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<section class="page">
+    {% include breadcrumbs.html %}
+    <article>
+        {% if page.image %}
+        <figure class="mb-5">
+            <img src="{{page.image}}" title="{{page.title}}" alt="{{page.alt}}" class="w-100 rounded img-fluid">
+            <figcaption class="text-small text-muted text-center"><small>{{page.legend}}</small></figcaption>
+        </figure>
+        {% else%}
+        {% endif %}
+
+        <header>
+            <h2 class="page-title" id="intro">{{page.title}}
+                {% if page.summary %}
+                <p class="fs-6 lh-base mt-3 fw-normal col-12 col-md-8">
+                    {{page.summary}}
+                </p>
+                {% else%}
+                {% endif %}</h2>
+            
+        </header>
+
+
+        {{ content }}
+    </article>
+</section>

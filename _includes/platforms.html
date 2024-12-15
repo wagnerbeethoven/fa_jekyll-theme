@@ -1,0 +1,23 @@
+<ul class="nav-platforms list-inline">
+  {% for item in site.data.links.streaming %}
+  <li class="list-inline-item p-1">
+    <a href="{{item.link}}" rel="noopener noreferrer" class="button button-outline">
+      <img src="{{site.url}}/img/platform/{{item.name | slugify}}.svg" class="me-2" alt="Logo da {{item.name}}" />
+      {{item.name}}
+    </a>
+  </li>
+  {% endfor %}
+  <li class="list-inline-item p-1">
+    <a href="{{site.url}}/newsletter" rel="noopener noreferrer" class="button button-outline">
+      <img src="{{site.url}}/img/platform/newsletter-subscribe.svg" class="me-2" style="width: 1.5rem; height: 1.5rem;"
+        alt="Ícone representado por um @" /> Newsletter
+    </a>
+  </li>
+  <li class="list-inline-item p-1">
+    <button class="button button-outline" title="Confira todas as plataformas" type="button" data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvas" aria-controls="offcanvas"">   
+      <i class=" fa-solid fa-ellipsis-vertical"></i>
+      <span class="visually-hidden">Abrir menu principal</span>
+    </button>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+{% for item in site.data.links.network %}
+<li class="px-1 d-flex align-self-center">
+    <a
+        href="{{item.link}}"
+        rel="external no-referrer noopener"
+        target="_blank"
+        title="O link do {{item.name}} irá abrir em uma nova aba"
+        class="social-icon-{{item.name | slugify}} text-decoration-none w-100 h-100 d-block">
+        {{item.icon}}
+        <span class="visually-hidden">{{item.name}}</span> 
+    </a>
+</li>
+{% endfor %}

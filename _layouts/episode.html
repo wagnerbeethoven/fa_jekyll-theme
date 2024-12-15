@@ -1,0 +1,57 @@
+---
+layout: default
+---
+
+<article class="page">
+  {% include breadcrumbs.html %}
+
+
+  <div class="section-subtitle text-uppercase fw-bold mb-2 mt-5 d-flex justify-content-start text-uppercase">
+    Episódio #{{page.number}} / {{page.duration}}
+  </div>
+  <div class="recent p-lg-5 p-md-4 p-3 rounded-2">
+    <div class="row">
+      <div class="col-lg-4 col-12 pl-0">
+        <figure class="ratio-1x1 ratio m-0 pb-0">
+          <img src="{{page.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2"
+            title="Foto de {{page.guest}}" alt="{{page.alt}}">
+        </figure>
+      </div>
+      <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
+        <div class="mb-4">
+          <h1 class="h2 program-title">
+            {{page.title}}
+          </h1>
+          <h2 class="h4 mt-3 program-guest">
+            {{page.guest}} &bull; {{page.role}}
+          </h2>
+          </h2>
+          {{page.excerpt}}
+          <div class="my-3 w-100">{% include player.html %}</div>
+          <a href="#content-detail" title="Clique para acessar informações sobre o episódio"><i
+              class="fa-solid fa-arrow-down pe-2"></i>Detalhes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include player-content.html %}
+  {% include subscribe.html %}
+  <div class="article-content" id="content-detail">
+    <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
+      <li class="nav-item col-12 col-md-6 active" role="presentation" aria-current="page">
+        <button class="w-100 active" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="notes-tab"
+          data-bs-target="#notes" aria-controls="notes">Anotações do programa</button>
+      </li>
+      <li class="nav-item col-12 col-md-6" role="presentation">
+        <button class="w-100" data-bs-toggle="tab" type="button" role="tab" aria-selected="false" id="transcription-tab"
+          data-bs-target="#transcription" aria-controls="transcription">Transcrição</button>
+      </li>
+    </ul>
+    <div class="article-tabs-content tab-content">
+
+      {{ content }}
+      {% include comments.html %}
+    </div>
+  </div>
+</article>

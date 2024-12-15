@@ -1,0 +1,12 @@
+---
+layout: page
+title: "Episódios"
+permalink: episodios.html
+---
+<div class="programs">
+    <ul class="row">
+        {% for post in site.posts %}
+        {% include loop-program.html %}
+        {% endfor %}
+    </ul>
+</div>

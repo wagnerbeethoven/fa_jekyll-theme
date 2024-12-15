@@ -1,0 +1,106 @@
+# MENU OFFCANVAS
+menu:
+  - name: "Página Inicial"
+    link: "./"
+    description: "Retorne à página inicial"
+    keys: 1
+  - name: "Episódios"
+    link: "episodios"
+    description: "Acesse todos os nossos episódios"
+    keys: 2
+  - name: "Convidados"
+    link: "convidados"
+    description: "Veja quem já participou"
+    keys: 3
+  # - name: "Críticas"
+  #   link: "criticas"
+  #   description: "Confira o que andam falando da gente"
+  - name: "Blog"
+    link: "blog"
+    description: "Conheça as referências que são faladas nos textos dos nossos episódios"
+    keys: 5
+  - name: "Sobre"
+    link: "sobre"
+    description: "Saiba o que é e quem faz o Foco Acessível"
+    keys: 4
+  - name: "Contato"
+    link: "contato"
+    description: "Fale conosco"
+    keys: 6
+
+# ITEMS TOP MENU
+streaming:
+  - name: Spotify
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
+  - name: Deezer
+    link: "https://www.deezer.com/pt/show/6060897"
+  - name: Apple
+    link: "https://podcasts.apple.com/us/podcast/foco-acessível/id1690286033"
+  - name: Amazon Music
+    link: "https://music.amazon.com.br/podcasts/9d5a371f-7ea8-4ba1-b558-416e4337591e/foco-acessível"
+    custom: 'width: 32px; height: 32px'
+  - name: Android
+    link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  # - name: Google
+  #   link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
+  # - name: Soundcloud
+    # link: "https://soundcloud.com/focoacessivel"
+
+# NETWORK
+network:
+  - name: LinkedIn
+    link: https://www.linkedin.com/company/focoacessivel
+    icon: '<span class="fa-brands fa-linkedin"></span>'
+  - name: Instagram
+    link: http://www.instagram.com/focoacessivel
+    icon: '<span class="fa-brands fa-instagram"></span>'
+  - name: TikTok
+    link: http://www.tiktok.com/@focoacessivel
+    icon: '<span class="fa-brands fa-tiktok"></span>'
+  - name: Facebook
+    link: http://www.facebook.com/focoacessivel
+    icon: '<span class="fa-brands fa-facebook"></span>'
+  - name: Pinterest
+    link: https://pinterest.com/focoacessivel/
+    icon: '<span class="fa-brands fa-pinterest"></span>'
+  - name: Twitter
+    link: https://x.com/intent/follow?screen_name=foco_acessivel
+    icon: '<span class="fa-brands fa-twitter"></span>'
+  - name: Threads
+    link: https://www.threads.net/@focoacessivel
+    icon: '<span class="fa-brands fa-threads"></span>'
+
+platforms:
+  - name: Amazon Music
+    link: "https://music.amazon.com.br/podcasts/9d5a371f-7ea8-4ba1-b558-416e4337591e/foco-acessível"
+  - name: Android
+    link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
+  - name: Apple
+    link: "https://podcasts.apple.com/us/podcast/foco-acessível/id1690286033"
+  - name: Castbox
+    link: https://castbox.fm/ch/5437486
+  - name: Deezer
+    link: "https://www.deezer.com/pt/show/6060897"
+  - name: Overcast
+    link: "https://overcast.fm/p4283328-xrLc4f"
+  - name: Pocket Casts
+    link: "https://pca.st/9m9todni"
+  - name: Radiopublic
+    link: "https://radiopublic.com/foco-acessvel-GKQpMl"
+  - name: Spotify
+    link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
+  - name: Tune In
+    link: "http://tun.in/ptZAV"
+  - name: Youtube
+    link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
+  - name: Youtube Music
+    link: "https://music.youtube.com/playlist?list=PLn1lr_3QMgomQCLIbbcg-TVB_SRkc7aKb"
+# - name: Google
+#   link: "https://podcasts.google.com/feed/aHR0cHM6Ly9mZWVkcy5zb3VuZGNsb3VkLmNvbS91c2Vycy9zb3VuZGNsb3VkOnVzZXJzOjEyMTc4MzMxNDQvc291bmRzLnJzcw"
+# - name: Soundcloud
+#   link: "https://soundcloud.com/focoacessivel"
+# - name: Stitcher
+#   link: "https://www.stitcher.com/show/1071350"
+
