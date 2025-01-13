@@ -5,26 +5,26 @@ menu:
     description: "Retorne à página inicial"
     keys: 1
   - name: "Episódios"
-    link: "episodios"
+    link: "episodios.html"
     description: "Acesse todos os nossos episódios"
     keys: 2
   - name: "Convidados"
-    link: "convidados"
+    link: "convidados.html"
     description: "Veja quem já participou"
     keys: 3
   # - name: "Críticas"
   #   link: "criticas"
   #   description: "Confira o que andam falando da gente"
   - name: "Blog"
-    link: "blog"
+    link: "blog.html"
     description: "Conheça as referências que são faladas nos textos dos nossos episódios"
     keys: 5
   - name: "Sobre"
-    link: "sobre"
+    link: "sobre.html"
     description: "Saiba o que é e quem faz o Foco Acessível"
     keys: 4
   - name: "Contato"
-    link: "contato"
+    link: "contato.html"
     description: "Fale conosco"
     keys: 6
 
