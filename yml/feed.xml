@@ -7,7 +7,7 @@ permalink: feed-blog.xml
 <channel>
  <title>{{ site.title }}</title>
  <description>{{ site.description }}</description>
- <link>https://focoacessivel.com.br</link>
+ <link>{{ site.baseurl }}</link>
  <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
  <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
  <ttl>1800</ttl>
@@ -16,8 +16,8 @@ permalink: feed-blog.xml
  <item>
   <title>{{ post.title }}</title>
   <description>{{ post.excerpt }}</description>
-  <link>https://focoacessivel.com.br/{{ post.url }}</link>
-  <guid isPermaLink="true">https://focoacessivel.com.br/{{ post.url }}</guid>
+  <link>{{ site.baseurl }}/{{ post.url }}</link>
+  <guid isPermaLink="true">{{ site.baseurl }}/{{ post.url }}</guid>
   <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
  </item>
  {% endfor %}

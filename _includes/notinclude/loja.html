@@ -3,7 +3,7 @@
     <ul class="row">
         {% for item in site.data.loja.item-destaque %}
         <li class="col-12 col-md-4 shop-item text-center">
-            <img class="rounded img-fluid shop-item-picture" src="https://focoacessivel.com.br/img/{{item.picture}}" alt="{{item.alt}}">
+            <img class="rounded img-fluid shop-item-picture" src="{{ site.baseurl }}/img/{{item.picture}}" alt="{{item.alt}}">
             <h3 class="shop-item-title">{{item.name}}</h3>
             <div class="shop-item-price">{{item.price}}</div>
             <a class="button" href="{{item.link}}" class="shop-item-link">Saiba mais</a>

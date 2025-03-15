@@ -22,26 +22,26 @@ layout: compress
   <!--  PINTEREST -->
   <meta name="p:domain_verify" content="f0a4b51290c8d79df0b5e93c43388693" />
   <!--  FAVICON -->
-  <link rel="shortcut icon" type="image/png" href="https://focoacessivel.com.br/img/icons/icon-72x72.png">
-  <link rel="shortcut icon" sizes="196x196" href="https://focoacessivel.com.br/img/icons/icon-192x192.png">
-  <link rel="apple-touch-icon" href="https://focoacessivel.com.br/ifavicon.ico">
+  <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/img/icons/icon-72x72.png">
+  <link rel="shortcut icon" sizes="196x196" href="{{ site.baseurl }}/img/icons/icon-192x192.png">
+  <link rel="apple-touch-icon" href="{{ site.baseurl }}/ifavicon.ico">
 
   <!--  CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
-  <link rel="stylesheet" href="https://focoacessivel.com.br/main.css">
-  <!-- <link rel="stylesheet" href="https://focoacessivel.com.br/diagnostic.css"> -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/main.css">
+  <!-- <link rel="stylesheet" href="{{ site.baseurl }}/diagnostic.css"> -->
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl }}">
   
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.baseurl }}">
   <link rel="alternate" href="https://anchor.fm/s/e14f7d9c/podcast/rss" type="application/rss+xml" title="Youtube">
   <link rel="alternate" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCYa1lmVi_lcn_DgT4cf-jRQ" type="application/rss+xml" title="Spotify">
 
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.url }}" />
-  <link rel="manifest" href="https://focoacessivel.com.br/manifest.json">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.baseurl }}" />
+  <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
   <meta name="theme-color" content="#005757" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -68,7 +68,7 @@ layout: compress
   <header class="py-4 container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
     {% if page.path contains '_posts' %}<div class="col-md-3 mb-2 mb-md-0">{%else%}<h1 class="col-md-3 mb-2 mb-md-0">{%endif%}
       <a href="/" class="text-decoration-none" title=" {{site.title}}">
-        <img title="Link para a página inicial do {{site.title}}" src="https://focoacessivel.com.br/img/logo.svg"
+        <img title="Link para a página inicial do {{site.title}}" src="{{ site.baseurl }}/img/logo.svg"
           class="d-block w-100" alt="Foco Acessível" aria-describedby="descricao-detalhada-logo-header">
 
           <span id="descricao-detalhada-logo-header" class="visually-hidden">{{site.logo-alt}}</span>
@@ -86,7 +86,7 @@ layout: compress
         {% for item in site.data.links.streaming %}
         <li class="nav-item">
           <a href="{{item.link}}"   class="nav-link"  title="Acompanhe o {{site.title}} no {{item.name}}">
-            <img src="https://focoacessivel.com.br/img/platform/{{item.name | slugify}}.svg" class="img-fluid" style="{% if item.custom %}{{item.custom}}{%else%}width: 24px; height: 24px{% endif%}" alt="Logo do {{item.name}}" />
+            <img src="{{ site.baseurl }}/img/platform/{{item.name | slugify}}.svg" class="img-fluid" style="{% if item.custom %}{{item.custom}}{%else%}width: 24px; height: 24px{% endif%}" alt="Logo do {{item.name}}" />
           </a>
         </li>
         {% endfor %}
@@ -103,7 +103,7 @@ layout: compress
     <div class="row">
       <div class="col-12 col-md-5 mb-3">
         <h3>
-          <img width="200px" title="Sobre o {{site.title}}" src="https://focoacessivel.com.br/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-rodape">
+          <img width="200px" title="Sobre o {{site.title}}" src="{{ site.baseurl }}/img/logo.svg" class="d-block mb-5" alt="Logo do {{site.title}}" aria-describedby="descricao-detalhada-logo-rodape">
           <span id="descricao-detalhada-logo-rodape" class="visually-hidden">{{site.logo-alt}}</span>
         </h3>
         <div class="col-12 col-md-8">{{site.footer-description}}</div>
@@ -115,14 +115,14 @@ layout: compress
           <ul class="nav flex-column">
             {% for item in site.data.links.menu %}
             <li class="nav-item mb-2">
-              <a class="nav-link p-0" href="https://focoacessivel.com.br/{{item.link}}"
+              <a class="nav-link p-0" href="{{ site.baseurl }}/{{item.link}}"
                 title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                 {{item.name}}
               </a>
             </li>
             {% endfor %}
             <li class="nav-item mb-2">
-              <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="https://focoacessivel.com.br/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
+              <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{ site.baseurl }}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
             </span>
             </li>
           </ul>
@@ -154,7 +154,7 @@ layout: compress
         <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
           title="Site do Jekyll - nova aba">Jekyll</a> com <span>❤️</span> e <span>☕</span>
         em Olinda, PE &mdash;
-        <a href="https://focoacessivel.com.br/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
+        <a href="{{ site.baseurl }}/arquivo" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
         <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
       </div>
       <ul class="col-12 col-md socials mt-5 mt-md-0 mb-0 d-flex justify-content-around">
@@ -170,7 +170,7 @@ layout: compress
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/3.7.3/plyr.min.js"></script> -->
   <script async src="https://static.addtoany.com/menu/page.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
-  <script src="https://focoacessivel.com.br/main.js"></script>
+  <script src="{{ site.baseurl }}/main.js"></script>
 
 </body>
 

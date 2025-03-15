@@ -40,19 +40,19 @@ title: Arquivo do site
     <ul class="list-group list-group-flush">
         {% for item in site.data.links.menu %}
         <li class="px-0 list-group-item position-relative">
-            <a class="text-decoration-none stretched-link" href="https://focoacessivel.com.br/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+            <a class="text-decoration-none stretched-link" href="{{ site.baseurl }}/{{item.link}}" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                 {{item.name}}
             </a>
         </li>
         {% endfor %}
         <li class="px-0 list-group-item position-relative">
-            <a class="text-decoration-none stretched-link" href="https://focoacessivel.com.br/newsletters.html" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+            <a class="text-decoration-none stretched-link" href="{{ site.baseurl }}/newsletters.html" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                 Lista de <span lang="en">newsletter</span> enviadas
             </a>
 
         </li>
         <li class="px-0 list-group-item position-relative">
-            <a class="text-decoration-none stretched-link" href="https://focoacessivel.com.br/declaracao-acessibilidade.html" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
+            <a class="text-decoration-none stretched-link" href="{{ site.baseurl }}/declaracao-acessibilidade.html" title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                 Declaração de acessibilidade
             </a>
 

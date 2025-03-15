@@ -12,7 +12,7 @@
                 <ul class="list-group list-group-flush">
                     {% for item in site.data.links.menu %}
                     <li class="list-group-item px-0 item-{{item.name | slugify}}">
-                        <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="https://focoacessivel.com.br/{{item.link}}"
+                        <a accesskey="{{item.keys}}" class="nav-link p-0 text-muted" href="{{ site.baseurl }}/{{item.link}}"
                             title="{% if item.description %}{{item.description}}{% else %}{{item.name}}{% endif %}">
                             {{item.name}} </a>
                     </li>
@@ -25,7 +25,7 @@
         </div>
         <div class="newsletter" id="newsletter">
             <h3 class="h5 mb-3">Newsletter</h2>
-            <p class="mb-5 ">Receba as novidades do Podcast no conforto do email. <a class="d-inline-block fw-semibold" href="https://focoacessivel.com.br/newsletter.html">Assine aqui.</a></p>
+            <p class="mb-5 ">Receba as novidades do Podcast no conforto do email. <a class="d-inline-block fw-semibold" href="{{ site.baseurl }}/newsletter.html">Assine aqui.</a></p>
         </div>
         <div class="platforms">
             <h3 class="h5 mb-3">Plataformas</h3>
@@ -35,14 +35,14 @@
                     <li class="list-group-item px-0">
                         <a href="{{item.link}}" class="text-decoration-none" title="Assine no {{item.name}} - nova aba"
                             rel="noopener noreferrer"> <img class=" me-2"
-                                src="https://focoacessivel.com.br/img/platform/{{item.name | slugify}}.svg" height="32" width="32"
+                                src="{{ site.baseurl }}/img/platform/{{item.name | slugify}}.svg" height="32" width="32"
                                 alt="Logo do {{item.name}}"> {{item.name}} </a>
                     </li>
                     {% endfor %}
     
                     <!-- <li class="list-group-item px-0">
                         <a href="https://anchor.fm/s/e14f7d9c/podcast/rss"   class="text-decoration-none" title="Assine nosso RSS - nova aba" rel="noopener noreferrer">
-                            <img class=" me-2" src="https://focoacessivel.com.br/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
+                            <img class=" me-2" src="{{ site.baseurl }}/img/platform/rss.svg" height="24" width="24" alt="Ícone do RSS"> Assine o nosso RSS
                         </a>
                     </li> -->
                 </ul>
@@ -51,7 +51,7 @@
 
         <div class="creative-commons mt-5 position-relative d-flex justify-content-center">
             <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt-br" class="text-center text-decoration-none">
-                <img src="https://focoacessivel.com.br/img/cc-icons.svg" class="mb-3 d-block mb-2 mx-auto" alt="Creative Commons" aria-describedby="descricao-detalhada-cc">
+                <img src="{{ site.baseurl }}/img/cc-icons.svg" class="mb-3 d-block mb-2 mx-auto" alt="Creative Commons" aria-describedby="descricao-detalhada-cc">
                 <span id="descricao-detalhada-cc" class="visually-hidden">3 ícones circulares, no 1º duas letra C, no 2º uma figura de uma pessoa em pé, 3º cifrão com uma barra diagonal</span>
                 <small>CC BY-NC 4.0 Deed<br>Atribuição-NãoComercial 4.0 Internacional</small>
             </a>

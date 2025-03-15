@@ -2,14 +2,14 @@
   {% for item in site.data.links.streaming %}
   <li class="list-inline-item p-1">
     <a href="{{item.link}}" rel="noopener noreferrer" class="button button-outline">
-      <img src="https://focoacessivel.com.br/img/platform/{{item.name | slugify}}.svg" class="me-2" alt="Logo da {{item.name}}" />
+      <img src="{{ site.baseurl }}/img/platform/{{item.name | slugify}}.svg" class="me-2" alt="Logo da {{item.name}}" />
       {{item.name}}
     </a>
   </li>
   {% endfor %}
   <li class="list-inline-item p-1">
-    <a href="https://focoacessivel.com.br/newsletter" rel="noopener noreferrer" class="button button-outline">
-      <img src="https://focoacessivel.com.br/img/platform/newsletter-subscribe.svg" class="me-2" style="width: 1.5rem; height: 1.5rem;"
+    <a href="{{ site.baseurl }}/newsletter" rel="noopener noreferrer" class="button button-outline">
+      <img src="{{ site.baseurl }}/img/platform/newsletter-subscribe.svg" class="me-2" style="width: 1.5rem; height: 1.5rem;"
         alt="Ícone representado por um @" /> Newsletter
     </a>
   </li>

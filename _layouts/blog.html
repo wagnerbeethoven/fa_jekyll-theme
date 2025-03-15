@@ -68,7 +68,7 @@ layout: default
       </ul>
 
       <div class="artigo-final">
-        <p>Obrigado por acompanhar até aqui! Inscreva-se em nossa <a href="https://focoacessivel.com.br/newsletter" lang="en">newsletter</a>
+        <p>Obrigado por acompanhar até aqui! Inscreva-se em nossa <a href="{{ site.baseurl }}/newsletter" lang="en">newsletter</a>
           (mandamos no máximos dois e-mails por mês 🥰), siga-nos nas redes sociais ({% for item in
           site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}"
                 title="Nos acompanhe também no {{item.name}} - nova aba"
@@ -96,7 +96,7 @@ layout: default
                 <span class="program-duration">{{page.duration}}</span>
               </div>
               <h4 class="h2 program-title-ep">
-                <a href="https://focoacessivel.com.br/episodios/{{page.link-ep}}" title-ep="Acesse o episódio">{{page.title-ep}}</a>
+                <a href="{{ site.baseurl }}/episodios/{{page.link-ep}}" title-ep="Acesse o episódio">{{page.title-ep}}</a>
               </h4>
               <div class="program-footer mt-2 mb-3">
                 <span> {{page.guest}} &bull; {{page.role}}</span>
