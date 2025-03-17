@@ -1,12 +1,367 @@
 ---
-title: 'ABNT NBR 17225-2025 – A nova norma de acessibilidade digital no Brasil'
+title: 'ABNT NBR 17225:2025 – A nova norma de acessibilidade digital no Brasil'
 layout: blog
 categories: Blog
 comments: true
-excerpt: "Saiba como as comunidades online podem fortalecer o desenvolvimento de tecnologias acessíveis e a criação de uma web mais independente e descentralizada."
-tags: [acessibilidade digital, acessibilidade na web, aprendizado coletivo, comunicação acessível, comunidades online, controle da informação, dependência digital, descentralização, desenvolvimento colaborativo, diversidade, Google, inclusão, independência digital, IndieAuth, IndieWeb, interoperabilidade, Microformats, posse dos dados, POSSE, SEO, Solid, tecnologias acessíveis, The A11y Project, WebAIM, Tim Berners-Lee, WAI-ARIA, web descentralizada, web independente, Webmentions, webring]
+excerpt: "A acessibilidade digital avança no Brasil com a ABNT NBR 17225:2025, norma que define requisitos para tornar conteúdos e aplicações web mais inclusivos. Neste artigo, exploramos os principais pontos da norma, seu impacto nos produtos digitais e as consequências para quem não a seguir."
+tags: [Acessibilidade digital, ABNT NBR 17225:2025, WCAG 2.2, Inclusão digital, Conformidade web, Usabilidade, Experiência do usuário, Design acessível, Web semântica, Leitores de tela, SEO acessível, Desenvolvimento web, Tecnologia assistiva, Normas de acessibilidade, Impacto legal da acessibilidade]
 image: "https://raw.githubusercontent.com/focoacessivel/pictures/main/blog/lancamento-abnt-marco-pellegrini-foto-ana-nascimento-nic.br.jpg"
 banner-alt: 'Marco Pellegrini, em cadeira de rodas, fala no lançamento da norma de acessibilidade que eleva o padrão da web brasileira, realizado em São Paulo. Ao lado, um intérprete de Libras traduz o discurso para a plateia. (Foto: Ana Nascimento / Comunicação do NIC.br)'
 legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/brasil-eleva-padrao-da-web-com-nova-norma-de-acessibilidade-da-abnt-e-ceweb-br/">Jornalista Inclusivo</a>'
-
 ---
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+
+<!-- and it's easy to individually load additional languages -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
+<script>hljs.highlightAll();</script>
+
+
+<p>A acessibilidade digital tem avançado globalmente, e o Brasil dá mais um passo significativo com a <strong>ABNT NBR 17225:2025</strong>, a norma que estabelece requisitos de acessibilidade para conteúdos e aplicações web. Baseada nas <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.2)</strong> do W3C, a norma busca garantir que sites e sistemas sejam acessíveis para todas as pessoas, incluindo aquelas com deficiência, necessidades temporárias ou limitações situacionais.</p>
+<p>Mas como isso impacta o dia a dia de desenvolvedores, designers e gestores? Vamos explorar os principais pontos da norma e entender como ela impacta desenvolvedores, designers e gestores de produtos digitais.</p>
+
+<h2>O que é a ABNT e qual seu papel?</h2>
+<p>A <strong>ABNT (Associação Brasileira de Normas Técnicas)</strong> é o órgão responsável pela criação e padronização de normas técnicas no Brasil. Fundada em 1940, a ABNT atua em diversas áreas, incluindo <strong>engenharia, tecnologia, segurança, meio ambiente e acessibilidade</strong>.</p>
+<p>Seu objetivo principal é garantir <strong>padronização e qualidade</strong> em produtos e serviços, facilitando a regulamentação e a adoção de boas práticas no mercado.</p>
+<p>A ABNT não tem poder fiscalizador, mas suas normas podem ser <strong>adotadas como referência em leis e regulamentos governamentais</strong>, tornando-se obrigatórias em certos contextos.</p>
+
+<h3>O Que é a ABNT NBR 17225:2025?</h3>
+<p>A <strong>ABNT NBR 17225:2025</strong> foi um trabalho de dois anos elaborado em um processo de colaboração de diversos especialistas, representando um avança ao cumprimento do artigo 63º da LBI. A norma define um conjunto de aproximadamente 150 <strong>requisitos e recomendações</strong> que visam eliminar barreiras no acesso a sites e aplicações web, tem como base os critérios da <strong>WCAG 2.2</strong> e estabelece dois tipos de conformidade:</p>
+<ol class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Conformidade Regular</strong>: Atendimento aos requisitos obrigatórios, garantindo alinhamento com os níveis <strong>A e AA da WCAG 2.2</strong>. </li>
+  <li class="px-0 list-group-item"><strong>Conformidade Plena</strong>: Além dos requisitos, incorpora todas as recomendações da norma, proporcionando <strong>uma experiência mais inclusiva e de alta qualidade</strong>.</li>
+</ol>
+<p>Dessa forma, a norma reforça a importância da acessibilidade digital em diversas frentes:</p>
+<ol class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item">Navegação <strong>totalmente acessível pelo teclado</strong>.</li>
+  <li class="px-0 list-group-item">Uso correto de <strong>cabeçalhos, links e elementos semânticos</strong>. </li>
+  <li class="px-0 list-group-item"><strong>Textos alternativos</strong> para imagens. </li>
+  <li class="px-0 list-group-item"><strong>Legendas e audiodescrição</strong> para vídeos. </li>
+  <li class="px-0 list-group-item"><strong>Contraste adequado</strong> entre texto e fundo. </li>
+  <li class="px-0 list-group-item">Tamanho de fonte e espaçamento adequado para <strong>boa leitura</strong>. </li>
+  <li class="px-0 list-group-item"><strong>Evitar animações excessivas e flashes</strong> que possam causar desconforto. </li>
+  <li class="px-0 list-group-item"><strong>Botões de tamanho adequado</strong> para facilitar a interação. </li>
+  <li class="px-0 list-group-item"><strong>Formulários acessíveis</strong>, com rótulos claros e mensagens de erro compreensíveis.</li>
+</ol>
+<p>Seguir a norma não apenas contribui para um ambiente digital mais acessível, como também ajuda a <strong>evitar processos legais e tornar os produtos compatíveis com diretrizes internacionais</strong>.</p>
+
+<h2>Principais requisitos da norma</h2>
+<p>A seguir, apresento um panorama de cada área abordada pela norma.</p>
+
+<h3>Estrutura e semântica</h3>
+<p>O código HTML deve ser bem estruturado para permitir que tecnologias assistivas interpretem corretamente a página. Isso inclui:</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li  class="px-0 list-group-item"><strong>Cabeçalhos estruturados (<code class="language-html">&lt;h1&gt;</code> a <code class="language-html">&lt;h6&gt;</code>)</strong>:
+    <ul class="list-group ps-4  list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">O <code class="language-html">&lt;h1&gt;</code> deve ser único por página, representando o título principal.</li>
+      <li class="px-0 list-group-item">Os demais cabeçalhos devem manter uma hierarquia lógica (<code class="language-html">&lt;h2&gt;</code> → <code class="language-html">&lt;h3&gt;</code> → <code class="language-html">&lt;h4&gt;</code>).</li>
+      <li class="px-0 list-group-item">Nunca use cabeçalhos apenas para estilização.</li>
+    </ul>
+  </li>
+  <li class="px-0 list-group-item"><strong>Regiões semânticas</strong> (<code class="language-html">&lt;header&gt;</code>, <code class="language-html">&lt;nav&gt;</code>, <code class="language-html">&lt;main&gt;</code>, <code class="language-html">&lt;aside&gt;</code>, <code class="language-html">&lt;footer&gt;</code>) devem estar corretamente implementadas para facilitar a navegação por leitores de tela (WCAG 1.3.1 – A).</li>
+  <li class="px-0 list-group-item"><strong>Listas (<code class="language-html">&lt;ul&gt;</code>, <code class="language-html">&lt;ol&gt;</code>, <code class="language-html">&lt;dl&gt;</code>)</strong> devem ser corretamente declaradas.
+    <ul class="list-group ps-4  mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Itens de lista (<code class="language-html">&lt;li&gt;</code>) nunca devem ficar soltos fora de uma <code class="language-html">&lt;ul&gt;</code> ou <code class="language-html">&lt;ol&gt;</code>.</li>
+      <li class="px-0 list-group-item">Definições (<code class="language-html">&lt;dt&gt;</code>, <code class="language-html">&lt;dd&gt;</code>) devem estar dentro de uma <code class="language-html">&lt;dl&gt;</code>.</li>
+    </ul>
+  </li>
+  <li class="px-0 list-group-item"><strong>Tabelas devem ser utilizadas apenas para dados estruturados</strong> e precisam incluir:
+    <ul class="list-group ps-4 mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Cabeçalhos de tabela (<code class="language-html">&lt;th&gt;</code>) identificando colunas e linhas (WCAG 1.3.1 – A).</li>
+      <li class="px-0 list-group-item">Atributos <code class="language-html">scope=&quot;col&quot;</code> ou <code class="language-html">scope=&quot;row&quot;</code> para indicar a função das células <code class="language-html">&lt;th&gt;</code>.</li>
+      <li class="px-0 list-group-item">Evitar tabelas de leiaute; se forem usadas, não devem ter atributos semânticos. </li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Dica de implementação</strong>: Use <span lang="en">landmarks</span> para navegação eficiente.</p>
+<p>Exemplo: <code class="language-html">&lt;nav&gt;</code> para menus, <code class="language-html">&lt;main&gt;</code> para conteúdo principal, <code class="language-html">&lt;aside&gt;</code> para conteúdos secundários.</p>
+
+<h2>Codificação e marcação semântica</h2>
+<p>A estrutura do código deve ser <strong>compatível com tecnologias assistivas</strong> e seguir as boas práticas de desenvolvimento acessível.</p>
+
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Título da página (<code class="language-html">&lt;title&gt;</code>) deve ser descritivo</strong> e refletir o conteúdo da página (WCAG 2.4.2 – A).</li>
+  <li class="px-0 list-group-item"><strong>O idioma da página deve ser especificado (<code class="language-html">lang=&quot;pt-br&quot;</code>)</strong> para que leitores de tela utilizem a pronúncia correta (WCAG 3.1.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Zoom do navegador não pode ser bloqueado</strong> e deve permitir ampliação de até 200% sem perda de conteúdo (WCAG 1.4.4 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Mensagens de status devem ser anunciadas para leitores de tela</strong> sem exigir foco no elemento (WCAG 4.1.3 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Elementos interativos devem ter um &quot;nome acessível&quot;</strong>, garantindo compatibilidade com leitores de tela (WCAG 4.1.2 – A).</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Para garantir que mensagens dinâmicas sejam lidas por leitores de tela,  use ARIA live regions:</p>
+<pre><code class="lang-html">
+  &lt;div role="status" aria-live="polite"&gt;
+  Mensagem de erro: Preencha todos os campos obrigatórios.
+  &lt;/div&gt;
+</code></pre>
+
+<h2>Tamanho de fonte e espaçamento entre linhas</h2>
+<p>A norma segue as diretrizes da <strong>WCAG 2.2</strong> e define requisitos mínimos para facilitar a leitura e  garantir que o conteúdo seja ajustável conforme a necessidade do usuário.</p>
+<h3>Tamanho de fonte</h3>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Texto padrão deve ser ajustável sem perda de funcionalidade</strong>: O usuário deve poder aumentar a fonte em <strong>até 200%</strong> sem prejudicar a experiência ou cortar conteúdo (WCAG 1.4.4 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Texto em tamanho grande</strong>: O critério para definir um <strong>texto grande</strong> é:
+    <ul class="list-group ps-4  mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Pelo menos <strong>18pt (24px) em fonte normal</strong>.</li>
+      <li class="px-0 list-group-item">Pelo menos <strong>14pt (19px) em negrito</strong>.</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Dica de implementação:</strong></p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item">Use <strong>unidades relativas (<code class="language-html">rem</code>, <code class="language-html">em</code>, <code class="language-html">%</code>) em vez de <code class="language-html">px</code></strong> para garantir escalabilidade do texto.</li>
+  <li class="px-0 list-group-item">Evite definir <strong>tamanhos fixos de fonte em <code class="language-html">px</code></strong> no CSS.</li>
+</ul>
+<p>Exemplo correto:</p>
+<pre><code class="lang-css">
+  body {
+    font-size: 1rem; /* 16px padrão do navegador */
+  }
+  h1 {
+    font-size: 2rem; /* Escalável conforme a configuração do usuário */
+  }
+</code></pre>
+
+<h3>Espaçamento entre linhas e parágrafos</h3>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>O espaçamento entre linhas (<code class="language-html">line-height</code>) deve ser no mínimo de 1.5x</strong> o tamanho da fonte. </li>
+  <li class="px-0 list-group-item"><strong>O espaçamento entre parágrafos deve ser pelo menos 2x o tamanho da fonte</strong> (WCAG 1.4.12 – AA). </li>
+  <li class="px-0 list-group-item"><strong>O espaçamento entre palavras e letras também deve ser ajustável</strong>:</li>
+  <li class="px-0 list-group-item"><strong>Espaçamento entre palavras ≥ 0.16x o tamanho da fonte</strong>.</li>
+  <li class="px-0 list-group-item"><strong>Espaçamento entre letras ≥ 0.12x o tamanho da fonte</strong>.</li>
+</ul>
+<p><strong>Dica de implementação</strong>: CSS para definir espaçamentos adequados:</p>
+<pre><code class="lang-css">
+  p {
+    line-height: 1.5; /* Espaçamento entre linhas */
+    margin-bottom: 1em; /* Espaçamento entre parágrafos */
+    letter-spacing: 0.12em; /* Espaçamento entre letras */
+    word-spacing: 0.16em; /* Espaçamento entre palavras */
+  }
+</code></pre>
+<p>Isso melhora a legibilidade, especialmente para <strong>pessoas com dislexia e baixa visão</strong>.</p>
+
+<h2>Contraste e cores</h2>
+<p>Para garantir legibilidade, a norma exige um <strong>contraste mínimo entre o texto e o fundo</strong>:</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>4.5:1 para textos normais</strong> (WCAG 1.4.3 – AA). </li>
+  <li class="px-0 list-group-item"><strong>3:1 para elementos gráficos importantes</strong> (WCAG 1.4.11 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Não usar cores como único indicativo de erro ou estado</strong> (WCAG 1.4.1 – A).</li>
+</ul>
+
+<p><strong>Dica de implementação</strong>: Utilize ferramentas como <a href="https://coolors.co/contrast-checker" class="fw-bold">Color Contrast Checker</a> para testar a relação de contraste entre cores.</p>
+
+<h2>Interação por teclado</h2>
+<p>Usuários que não podem usar o mouse precisam ser capazes de navegar <strong>e operar todas as funcionalidades do site apenas com o teclado</strong>. Isso significa que:</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>O indicador de foco deve ser visível</strong>: todos os elementos interativos devem exibir um contorno ou destaque ao serem selecionados via teclado (WCAG 2.4.7 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Ordem de navegação previsível</strong>: fluxo de navegação pelo teclado deve ser lógico, seguindo a hierarquia da página sem pular elementos importantes (WCAG 2.4.3 – A). </li>
+  <li class="px-0 list-group-item"><strong>Evitar armadilhas de foco</strong>: nenhum elemento deve prender o usuário no foco, impedindo que ele continue navegando sem precisar usar o mouse (WCAG 2.1.2 – A). </li>
+  <li class="px-0 list-group-item"><strong>Atalhos de teclado</strong>:
+    <ul class="list-group ps-3 mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Não podem usar apenas uma tecla sem uma tecla modificadora (exemplo: apenas “S” para buscar pode conflitar com leitores de tela).</li>
+      <li class="px-0 list-group-item">Deve haver uma opção para desativar atalhos de teclado sem modificador (WCAG 2.1.4 – A).</li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Dica de implementação</strong>: use <code class="language-html">tabindex=&quot;0&quot;</code> para incluir elementos na navegação por tabulação e evite <code class="language-html">tabindex</code> positivo, pois pode desordenar a sequência natural.</p>
+
+<h2>Links e navegação</h2>
+<p>A navegação e a interação com links devem ser previsíveis e fáceis de entender.</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Todos os links devem indicar claramente seu propósito</strong> com um texto descritivo (WCAG 2.4.4 – A). </li>
+  <li class="px-0 list-group-item"><strong>Evite usar “Clique aqui”</strong> como texto do link. O texto deve indicar o destino (exemplo: &quot;Baixar Relatório em PDF&quot;). </li>
+  <li class="px-0 list-group-item"><strong>Links que abrem em nova aba/janela devem avisar o usuário</strong> (WCAG 3.2.5 – AAA). </li>
+  <li class="px-0 list-group-item"><strong>Links externos devem ser sinalizados</strong> para que o usuário saiba que será redirecionado para outro site.</li>
+  <li class="px-0 list-group-item"><strong>Menus de navegação devem ser consistentes em todas as páginas</strong> (WCAG 3.2.3 – AA).</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Para avisar que um link abrirá em uma nova aba, utilize:</p>
+<pre><code class="lang-html">
+  &lt;a href="https://focoacessivel.com.br.com"
+    target="_blank"
+    rel="noopener"
+    aria-label="Abrir página em nova aba"&gt;
+      Abrir O Foco Acessível em uma nova aba 🔗
+  &lt;/a&gt;
+</code></pre>
+
+<h2>Formulários e entrada de dados</h2>
+<p>Os formulários precisam ser compreensíveis e operáveis por todos os usuários. Isso inclui:</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Todos os campos de formulário devem ter rótulos (<code class="language-html">&lt;label&gt;</code> explicitamente associados ao <code class="language-html">&lt;input&gt;</code>)</strong> (WCAG 1.3.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Campos obrigatórios devem ser identificados antes do envio</strong>, evitando que o usuário descubra o erro apenas ao submeter o formulário. </li>
+  <li class="px-0 list-group-item"><strong>Mensagens de erro devem ser descritivas e sugerir correções</strong> (WCAG 3.3.3 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Evite depender apenas de cor para indicar campos com erro</strong>. Deve-se usar também ícones, mensagens de texto e <code class="language-html">aria-describedby</code>. </li>
+  <li class="px-0 list-group-item"><strong>Autenticação acessível</strong>:
+    <ul class="list-group ps-3 mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Se houver CAPTCHA, ele deve ter uma alternativa acessível, como um desafio auditivo ou matemático (WCAG 3.3.7 – AA).</li>
+      <li class="px-0 list-group-item">Campos de senha devem permitir autenticação por métodos alternativos, como login social ou chaves de acesso. </li>
+    </ul>
+  </li>
+</ul>
+<p><strong>Dica de implementação</strong>: Sempre associe um <code class="language-html">id</code> ao campo <code class="language-html">&lt;input&gt;</code> e um
+<pre><code class="language-html">
+&lt;label for="email"&gt;E-mail&lt;/label&gt;
+&lt;input type="email" id="email" name="email"&gt;
+</code></pre>
+
+<h2>Imagens e multimídia</h2>
+<p>Conteúdos visuais devem ser acessíveis para usuários cegos ou com baixa visão.</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Imagens precisam de texto alternativo (<code class="language-html">alt=&quot;&quot;</code>) adequado</strong>:
+    <ul class="list-group mb-3 list-group-flush list-group-numbered">
+      <li class="px-0 list-group-item">Se for informativa, o texto alternativo deve descrever seu significado.</li>
+      <li class="px-0 list-group-item">Se for decorativa, o <code class="language-html">alt</code> deve ser vazio (<code class="language-html">alt=&quot;&quot;</code>).</li>
+      <li class="px-0 list-group-item">Imagens complexas, como gráficos, precisam de uma descrição detalhada próxima à imagem.</li>
+    </ul>
+  <li class="px-0 list-group-item"><strong>Vídeos devem ter legendas descritivas para usuários surdos</strong> (WCAG 1.2.2 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Audiodescrição obrigatória para vídeos com conteúdo visual importante</strong> (WCAG 1.2.5 – AA).</li>
+  <li class="px-0 list-group-item"><strong>Áudio não pode ser reproduzido automaticamente por mais de 3 segundos, a menos que haja um controle para pausá-lo</strong> (WCAG 1.4.2 – A).</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Utilize a API <code class="language-html">track</code> do HTML5 para legendas em vídeos:</p>
+<pre><code class="lang-html">
+  &lt;video controls&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    &lt;track src="legendas.vtt" kind="subtitles" srclang="pt-br" label="Português"&gt;
+  &lt;/video&gt;
+</code></pre>
+
+<h3>Uso de mídia sincronizada (áudio e vídeo ao vivo)</h3>
+<p>Conteúdos multimídia ao vivo também devem ser acessíveis.</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Legendas obrigatórias para transmissões ao vivo</strong> (WCAG 1.2.4 – AA).</li>
+  <li class="px-0 list-group-item"><strong>Transcrição obrigatória para áudios e vídeos gravados</strong> (WCAG 1.2.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Audiodescrição recomendada para vídeos com informações visuais importantes</strong> (WCAG 1.2.5 – AA).</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Se você faz lives, pode usar serviços como <a href="https://support.google.com/youtube/answer/3068031?hl=pt-BR&sjid=370227882928001301-SA" class="fw-bold" lang="en">YouTube Live Closed Captions</a> para legendas automáticas.</p>
+
+<h2>Tempo e animações</h2>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Usuários devem poder ajustar ou desativar limites de tempo</strong> (WCAG 2.2.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Flashes intermitentes não podem ultrapassar 3 piscadas por segundo</strong> para evitar gatilhos de epilepsia (WCAG 2.3.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Usuários devem poder pausar, interromper ou ocultar animações automáticas.</strong> (WCAG 2.2.2 – AA)</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Para evitar desconforto, <strong>reduza movimentos excessivos</strong> no design e sempre ofereça um botão de pausa para animações.
+
+<h2 id="tamanho-e-rea-de-clique-dos-bot-es">Tamanho e área de clique dos botões</h2>
+<p>A norma determina que os botões e elementos interativos sejam de tamanho adequado para facilitar o toque e o clique, especialmente em dispositivos móveis.</p>
+
+<h3>Tamanho mínimo de botões e elementos interativos</h3>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>O tamanho mínimo para elementos clicáveis é de 24px x 24px</strong> (WCAG 2.5.8 – AA). </li>
+  <li class="px-0 list-group-item"><strong>O recomendado para uma melhor experiência é 44px x 44px</strong> (WCAG 2.5.5 – AAA). </li>
+  <li class="px-0 list-group-item"><strong>Se o botão for menor que 44px, ele deve ter espaçamento externo suficiente</strong> para evitar toques acidentais.</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Certifique-se de que <strong>botões tenham uma área de toque adequada</strong>, especialmente em dispositivos móveis:</p>
+<pre><code class="lang-css">
+  button {
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px 16px;
+  }
+</code></pre>
+
+<p>Se um botão menor precisar ser usado, garanta um espaçamento ao redor:</p>
+<pre><code class="lang-css">
+  button {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    }
+</code></pre>
+<p>Isso evita que botões fiquem muito próximos, dificultando a interação para <strong>usuários com mobilidade reduzida</strong>.</p>
+
+<h3>Área de clique e espaçamento dos botões</h3>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Botões devem ter uma área de clique grande o suficiente</strong> para evitar erros de toque. </li>
+  <li class="px-0 list-group-item"><strong>Não usar apenas ícones como botões</strong>, sem um <strong>rótulo acessível (<code class="language-html">aria-label</code> ou <code class="language-html">title</code>)</strong>. </li>
+  <li class="px-0 list-group-item"><strong>O acionamento do botão não pode ocorrer apenas ao passar o mouse (<code class="language-css">hover</code>), mas sim ao clicar ou pressionar Enter/Espaço no teclado.</strong></li>
+</ul>
+<p><strong>Dica de implementação:</strong></p>
+<pre><code class="lang-html">
+    &lt;button aria-label="Enviar formulário"&gt;📩&lt;/button&gt;
+</code></pre>
+<p>Isso garante que leitores de tela anunciem corretamente a função do botão.</p>
+
+<h2>Autenticação e Segurança</h2>
+<p>Usuários devem conseguir se autenticar sem barreiras desnecessárias.</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Evitar testes de função cognitiva</strong>, como desafios baseados em memorização ou cálculos (WCAG 3.3.7 – AA). </li>
+  <li class="px-0 list-group-item"><strong>CAPTCHAs devem ter alternativas acessíveis</strong>, como desafios auditivos ou perguntas simples. </li>
+  <li class="px-0 list-group-item"><strong>Autenticação sem exigência de lembrar senha</strong>: Opções como login por e-mail ou biometria devem estar disponíveis.</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Se for necessário usar CAPTCHA, forneça alternativas como um código enviado por e-mail.</p>
+
+<h2>Desempenho funcional e adaptação para diferentes usuários</h2>
+<p>A experiência deve ser acessível para usuários com diferentes necessidades, incluindo:</p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Navegação sem visão</strong>: Leitores de tela devem ser capazes de descrever todo o conteúdo. </li>
+  <li class="px-0 list-group-item"><strong>Navegação com visão limitada</strong>: O contraste e tamanho do texto devem ser ajustáveis. </li>
+  <li class="px-0 list-group-item"><strong>Navegação sem audição</strong>: Vídeos e áudios devem ter legendas ou transcrição. </li>
+  <li class="px-0 list-group-item"><strong>Navegação sem mobilidade nas mãos</strong>: Todo o site deve ser operável sem mouse. </li>
+  <li class="px-0 list-group-item"><strong>Navegação com cognição limitada</strong>: O design deve ser simples e intuitivo.</li>
+</ul>
+<p><strong>Dica de implementação</strong>: Teste o site usando apenas o <strong>teclado e um leitor de tela</strong> como o NVDA ou VoiceOver.</p>
+
+<h1>Por que essa norma é um marco importante?</h1>
+<p>A publicação da <strong>ABNT NBR 17225:2025</strong> representa um avanço fundamental na acessibilidade digital no Brasil. Ela reforça a necessidade de pensar na diversidade dos usuários, desde pessoas com deficiência até aquelas com limitações temporárias ou situacionais.</p>
+<p>Além disso, sua adoção favorece <strong>a inovação e a responsabilidade social das empresas</strong>, garantindo que mais pessoas tenham autonomia no uso de produtos digitais.</p>
+<p>Para desenvolvedores, designers e gestores, essa norma não deve ser vista apenas como uma obrigação, mas como <strong>um guia para a criação de experiências mais inclusivas e eficientes</strong>.</p>
+<p>Se você trabalha com tecnologia, está na hora de revisar seus projetos e garantir que eles estejam alinhados com essa nova norma. Afinal, acessibilidade não é um diferencial – <strong>é um direito</strong>.</p>
+
+<p>Confira a fala do Reinaldo Ferraz, nosso convidado do nosso <a
+href="http://focoacessivel.com.br/episodios/ep-5-acessibilidade-digital-no-brasil-desafios-e-iniciativas-inovadoras-reinaldo-ferraz.html">5º episódio</a> do podcast, sobre a norma.</p>
+<blockquote class="instagram-media d-block mx-auto" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DHGoPiexftZ/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DHGoPiexftZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Ver essa foto no Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DHGoPiexftZ/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Uma publicação compartilhada por Reinaldo Ferraz (@reinaldoferraz)</a></p></div></blockquote>
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+<h2>O que acontece se um produto digital não seguir as diretrizes?</h2>
+<p>A falta de acessibilidade pode ter <strong>impactos negativos</strong> tanto para os usuários quanto para as empresas. Aqui estão algumas das principais consequências para produtos digitais que <strong>não se adequam às normas</strong>:</p>
+<h3>Violações legais e processos judiciais</h3>
+<p>No Brasil, a acessibilidade digital é um <strong>direito garantido por lei</strong>. A <strong>Lei Brasileira de Inclusão (LBI) – Lei nº 13.146/2015</strong> exige que <strong>sites e sistemas digitais de empresas e órgãos públicos sejam acessíveis</strong>.</p>
+<p>Se um produto digital não atender aos critérios de acessibilidade, ele pode estar em <strong>desacordo com a legislação</strong>, o que pode resultar em: </p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Multas e penalidades</strong> impostas pelo governo. </li>
+  <li class="px-0 list-group-item"><strong>Ações judiciais individuais e coletivas</strong> movidas por usuários prejudicados. </li>
+  <li class="px-0 list-group-item"><strong>Termos de ajustamento de conduta (TACs)</strong> exigindo correções urgentes.</li>
+</ul>
+<p>Empresas já enfrentaram processos milionários por falta de acessibilidade digital — tanto no Brasil quanto no exterior.</p>
+<p><strong>Exemplo real</strong>: Nos EUA, grandes corporações como Netflix, Domino’s Pizza e Target foram processadas por não garantirem acessibilidade em seus sites e aplicativos.</p>
+<h3>Exclusão de usuários e perda de clientes</h3>
+<p>A acessibilidade digital não beneficia apenas <strong>pessoas com deficiência</strong>, mas <strong>toda a população</strong>, incluindo idosos, pessoas com dificuldades temporárias (exemplo: um braço imobilizado) e aqueles
+que enfrentam barreiras situacionais (como acessar um site sob forte luz do sol).</p>
+<p>Se um site ou aplicativo não for acessível, <strong>milhões de pessoas simplesmente não conseguirão usá-lo</strong>. Isso significa: </p>
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item"><strong>Perda de clientes e receita</strong>. </li>
+  <li class="px-0 list-group-item"><strong>Aumento da taxa de rejeição no site</strong> (os usuários abandonam rapidamente). </li>
+  <li class="px-0 list-group-item"><strong>Impacto negativo na reputação da marca</strong> (empresas que não investem em inclusão são mal vistas pelo público).</li>
+</ul>
+<p><strong>Dado importante</strong>: No Brasil, cerca de <strong>18,6 milhões de pessoas</strong> têm algum tipo de deficiência (IBGE, 2019). Ignorar a acessibilidade é excluir um mercado consumidor gigantesco.</p>
+
+<h3>Dificuldade em contratos com o setor público</h3>
+<p>Empresas que prestam serviços para órgãos governamentais precisam <strong>obrigatoriamente</strong> seguir normas de acessibilidade digital.</p>
+<p>Se um produto digital <strong>não for acessível</strong>, ele pode ser <strong>desclassificado</strong> em licitações e perder oportunidades de contrato com o setor público.</p>
+<p><strong>Exemplo</strong>: Sistemas de e-gov, plataformas de pagamento digital e portais de serviços precisam cumprir <strong>exigências legais</strong> de acessibilidade.</p>
+
+<h3>Impacto no SEO e visibilidade online</h3>
+<p>Os mecanismos de busca, como <strong>Google</strong>, dão prioridade para sites acessíveis. Isso significa que páginas que <strong>não seguem diretrizes de acessibilidade</strong> podem ter <strong>ranqueamento inferior</strong>, tornando-se menos visíveis nos resultados de pesquisa.</p>
+<p>SEO e acessibilidade digital <strong>andam juntos</strong>. Seguir as boas práticas da <strong>ABNT NBR 17225:2025</strong> pode: </p>
+
+<ul class="list-group mb-3 list-group-flush list-group-numbered">
+  <li class="px-0 list-group-item">Melhorar a <strong>indexação</strong> nos motores de busca. </li>
+  <li class="px-0 list-group-item">Aumentar o <strong>tempo de permanência</strong> dos usuários no site. </li>
+  <li class="px-0 list-group-item">Diminuir a <strong>taxa de rejeição</strong>.</li>
+</ul>
+<p><strong>Dica importante</strong>: Sites com <strong>cabeçalhos estruturados corretamente (<code class="language-html">&lt;h1&gt;</code>, <code class="language-html">&lt;h2&gt;</code>) e textos alternativos (<code class="language-html">alt=&quot;&quot;</code>) para imagens</strong> têm maior chance de ranquear melhor no Google.</p>
+
+<h2>Conclusão</h2>
+<p>A <strong>ABNT NBR 17225:2025</strong> estabelece padrões claros para garantir que todos possam navegar e interagir com conteúdos digitais sem barreiras. Se você desenvolve produtos digitais, <strong>não ignore essa norma</strong>: sua implementação melhora a experiência do usuário, amplia seu público e evita problemas legais.</p>
+<p>Se deseja aprofundar-se mais, recomendo ler a norma completa e começar a aplicá-la <strong>desde já</strong>. A acessibilidade digital é um caminho sem volta – e quanto mais cedo começarmos, melhor será para todos.</p>
+<p>📢 <strong>A acessibilidade digital não é apenas um diferencial competitivo — é um direito. Adotar a </strong>ABNT NBR 17225:2025** hoje significa não apenas cumprir normas, mas garantir que seu produto digital seja para todos. Você já começou essa adaptação? Compartilhe sua experiência nos comentários!&quot;</p>
+<hr>
+
+<p>Esse texto não substitui o documento original (baixe o documento original - PDF), Nele há muito mais detalhes. Além dessas recomendações, o documento apresenta um check-list para ajudar a guiar a construção das interfaces seguindo as recomendações propostas. </p>
+<p>Abaixo, o vídeo do lançamento da ABNT NBR 17225:2025:</p>
+<div class="ratio ratio-16x9">
+<iframe src="https://www.youtube.com/embed/JelMJjz4doA" title="Lançamento da ABNT NBR 17225 – Acessibilidade digital para Web (Tradução de Audiodescrição)"></iframe>
+</div>
