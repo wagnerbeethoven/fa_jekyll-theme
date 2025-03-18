@@ -78,7 +78,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <p><strong>Dica de implementação</strong>: Use <span lang="en">landmarks</span> para navegação eficiente.</p>
 <p>Exemplo: <code class="language-html">&lt;nav&gt;</code> para menus, <code class="language-html">&lt;main&gt;</code> para conteúdo principal, <code class="language-html">&lt;aside&gt;</code> para conteúdos secundários.</p>
 
-<h2>Codificação e marcação semântica</h2>
+<h3>Codificação e marcação semântica</h3>
 <p>A estrutura do código deve ser <strong>compatível com tecnologias assistivas</strong> e seguir as boas práticas de desenvolvimento acessível.</p>
 
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
@@ -95,9 +95,9 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
   &lt;/div&gt;
 </code></pre>
 
-<h2>Tamanho de fonte e espaçamento entre linhas</h2>
+<h3>Tamanho de fonte e espaçamento entre linhas</h3>
 <p>A norma segue as diretrizes da <strong>WCAG 2.2</strong> e define requisitos mínimos para facilitar a leitura e  garantir que o conteúdo seja ajustável conforme a necessidade do usuário.</p>
-<h3>Tamanho de fonte</h3>
+<h4>Tamanho de fonte</h4>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>Texto padrão deve ser ajustável sem perda de funcionalidade</strong>: O usuário deve poder aumentar a fonte em <strong>até 200%</strong> sem prejudicar a experiência ou cortar conteúdo (<a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">WCAG 1.4.4 – AA</a>). </li>
   <li class="px-0 list-group-item"><strong>Texto em tamanho grande</strong>: O critério para definir um <strong>texto grande</strong> é:
@@ -122,7 +122,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
   }
 </code></pre>
 
-<h3>Espaçamento entre linhas e parágrafos</h3>
+<h4>Espaçamento entre linhas e parágrafos</h4>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>O espaçamento entre linhas (<code class="language-html">line-height</code>) deve ser no mínimo de 1.5x</strong> o tamanho da fonte. </li>
   <li class="px-0 list-group-item"><strong>O espaçamento entre parágrafos deve ser pelo menos 2x o tamanho da fonte</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">WCAG 1.4.12 – AA</a>). </li>
@@ -141,7 +141,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 </code></pre>
 <p>Isso melhora a legibilidade, especialmente para <strong>pessoas com dislexia e baixa visão</strong>.</p>
 
-<h2>Contraste e cores</h2>
+<h3>Contraste e cores</h3>
 <p>Para garantir legibilidade, a norma exige um <strong>contraste mínimo entre o texto e o fundo</strong>:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>4.5:1 para textos normais</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">WCAG 1.4.3 – AA</a>).</li>
@@ -151,29 +151,29 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 
 <p><strong>Dica de implementação</strong>: Utilize ferramentas como <a href="https://coolors.co/contrast-checker" class="fw-bold">Color Contrast Checker</a> para testar a relação de contraste entre cores.</p>
 
-<h2>Interação por teclado</h2>
+<h3>Interação por teclado</h3>
 <p>Usuários que não podem usar o mouse precisam ser capazes de navegar <strong>e operar todas as funcionalidades do site apenas com o teclado</strong>. Isso significa que:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>O indicador de foco deve ser visível</strong>: todos os elementos interativos devem exibir um contorno ou destaque ao serem selecionados via teclado (WCAG 2.4.7 – AA). </li>
-  <li class="px-0 list-group-item"><strong>Ordem de navegação previsível</strong>: fluxo de navegação pelo teclado deve ser lógico, seguindo a hierarquia da página sem pular elementos importantes (WCAG 2.4.3 – A). </li>
-  <li class="px-0 list-group-item"><strong>Evitar armadilhas de foco</strong>: nenhum elemento deve prender o usuário no foco, impedindo que ele continue navegando sem precisar usar o mouse (WCAG 2.1.2 – A). </li>
+  <li class="px-0 list-group-item"><strong>O indicador de foco deve ser visível</strong>: todos os elementos interativos devem exibir um contorno ou destaque ao serem selecionados via teclado (<a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-appearance.html">WCAG 2.4.13 – AA</a>). </li>
+  <li class="px-0 list-group-item"><strong>Ordem de navegação previsível</strong>: fluxo de navegação pelo teclado deve ser lógico, seguindo a hierarquia da página sem pular elementos importantes (<a href="https://www.w3.org/WAI/WCAG22/Understanding/focus-order">WCAG 2.4.3 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Evitar armadilhas de foco</strong>: nenhum elemento deve prender o usuário no foco, impedindo que ele continue navegando sem precisar usar o mouse (<a href="https://www.w3.org/WAI/WCAG22/Understanding/no-keyboard-trap">WCAG 2.1.2 – A</a>). </li>
   <li class="px-0 list-group-item"><strong>Atalhos de teclado</strong>:
     <ul class="list-group ps-3 mb-3 list-group-flush list-group-numbered">
       <li class="px-0 list-group-item">Não podem usar apenas uma tecla sem uma tecla modificadora (exemplo: apenas “S” para buscar pode conflitar com leitores de tela).</li>
-      <li class="px-0 list-group-item">Deve haver uma opção para desativar atalhos de teclado sem modificador (WCAG 2.1.4 – A).</li>
+      <li class="px-0 list-group-item">Deve haver uma opção para desativar atalhos de teclado sem modificador (<a href="https://www.w3.org/WAI/WCAG22/Understanding/character-key-shortcuts">WCAG 2.1.4 – A</a>).</li>
     </ul>
   </li>
 </ul>
 <p><strong>Dica de implementação</strong>: use <code class="language-html">tabindex=&quot;0&quot;</code> para incluir elementos na navegação por tabulação e evite <code class="language-html">tabindex</code> positivo, pois pode desordenar a sequência natural.</p>
 
-<h2>Links e navegação</h2>
+<h3>Links e navegação</h3>
 <p>A navegação e a interação com links devem ser previsíveis e fáceis de entender.</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Todos os links devem indicar claramente seu propósito</strong> com um texto descritivo (WCAG 2.4.4 – A). </li>
+  <li class="px-0 list-group-item"><strong>Todos os links devem indicar claramente seu propósito</strong> com um texto descritivo (<a href="https://www.w3.org/WAI/WCAG22/Understanding/link-purpose-in-context">WCAG 2.4.4 – A</a>). </li>
   <li class="px-0 list-group-item"><strong>Evite usar “Clique aqui”</strong> como texto do link. O texto deve indicar o destino (exemplo: &quot;Baixar Relatório em PDF&quot;). </li>
-  <li class="px-0 list-group-item"><strong>Links que abrem em nova aba/janela devem avisar o usuário</strong> (WCAG 3.2.5 – AAA). </li>
+  <li class="px-0 list-group-item"><strong>Links que abrem em nova aba/janela devem avisar o usuário</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/change-on-request">WCAG 3.2.5 – AAA</a>).</li>
   <li class="px-0 list-group-item"><strong>Links externos devem ser sinalizados</strong> para que o usuário saiba que será redirecionado para outro site.</li>
-  <li class="px-0 list-group-item"><strong>Menus de navegação devem ser consistentes em todas as páginas</strong> (WCAG 3.2.3 – AA).</li>
+  <li class="px-0 list-group-item"><strong>Menus de navegação devem ser consistentes em todas as páginas</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/consistent-navigation">WCAG 3.2.3 – AA</a>).</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Para avisar que um link abrirá em uma nova aba, utilize:</p>
 <pre><code class="lang-html">
@@ -185,16 +185,16 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
   &lt;/a&gt;
 </code></pre>
 
-<h2>Formulários e entrada de dados</h2>
+<h3>Formulários e entrada de dados</h3>
 <p>Os formulários precisam ser compreensíveis e operáveis por todos os usuários. Isso inclui:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>Todos os campos de formulário devem ter rótulos (<code class="language-html">&lt;label&gt;</code> explicitamente associados ao <code class="language-html">&lt;input&gt;</code>)</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">WCAG 1.3.1 – A</a>). </li>
   <li class="px-0 list-group-item"><strong>Campos obrigatórios devem ser identificados antes do envio</strong>, evitando que o usuário descubra o erro apenas ao submeter o formulário. </li>
-  <li class="px-0 list-group-item"><strong>Mensagens de erro devem ser descritivas e sugerir correções</strong> (WCAG 3.3.3 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Mensagens de erro devem ser descritivas e sugerir correções</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/error-suggestion">WCAG 3.3.3 – AA</a>). </li>
   <li class="px-0 list-group-item"><strong>Evite depender apenas de cor para indicar campos com erro</strong>. Deve-se usar também ícones, mensagens de texto e <code class="language-html">aria-describedby</code>. </li>
   <li class="px-0 list-group-item"><strong>Autenticação acessível</strong>:
     <ul class="list-group ps-3 mb-3 list-group-flush list-group-numbered">
-      <li class="px-0 list-group-item">Se houver CAPTCHA, ele deve ter uma alternativa acessível, como um desafio auditivo ou matemático (WCAG 3.3.7 – AA).</li>
+      <li class="px-0 list-group-item">Se houver CAPTCHA, ele deve ter uma alternativa acessível, como um desafio auditivo ou matemático (<a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">WCAG 3.3.7 – A</a>).</li>
       <li class="px-0 list-group-item">Campos de senha devem permitir autenticação por métodos alternativos, como login social ou chaves de acesso. </li>
     </ul>
   </li>
@@ -205,7 +205,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 &lt;input type="email" id="email" name="email"&gt;
 </code></pre>
 
-<h2>Imagens e multimídia</h2>
+<h3>Imagens e multimídia</h3>
 <p>Conteúdos visuais devem ser acessíveis para usuários cegos ou com baixa visão.</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>Imagens precisam de texto alternativo (<code class="language-html">alt=&quot;&quot;</code>) adequado</strong>:
@@ -214,9 +214,9 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
       <li class="px-0 list-group-item">Se for decorativa, o <code class="language-html">alt</code> deve ser vazio (<code class="language-html">alt=&quot;&quot;</code>).</li>
       <li class="px-0 list-group-item">Imagens complexas, como gráficos, precisam de uma descrição detalhada próxima à imagem.</li>
     </ul>
-  <li class="px-0 list-group-item"><strong>Vídeos devem ter legendas descritivas para usuários surdos</strong> (WCAG 1.2.2 – AA). </li>
-  <li class="px-0 list-group-item"><strong>Audiodescrição obrigatória para vídeos com conteúdo visual importante</strong> (WCAG 1.2.5 – AA).</li>
-  <li class="px-0 list-group-item"><strong>Áudio não pode ser reproduzido automaticamente por mais de 3 segundos, a menos que haja um controle para pausá-lo</strong> (WCAG 1.4.2 – A).</li>
+  <li class="px-0 list-group-item"><strong>Vídeos devem ter legendas descritivas para usuários surdos</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-prerecorded">WCAG 1.2.2 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Audiodescrição obrigatória para vídeos com conteúdo visual importante</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">WCAG 1.2.5 – AA</a>).</li>
+  <li class="px-0 list-group-item"><strong>Áudio não pode ser reproduzido automaticamente por mais de 3 segundos, a menos que haja um controle para pausá-lo</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-control">WCAG 1.4.2 – A</a>).</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Utilize a API <code class="language-html">track</code> do HTML5 para legendas em vídeos:</p>
 <pre><code class="lang-html">
@@ -226,30 +226,30 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
   &lt;/video&gt;
 </code></pre>
 
-<h3>Uso de mídia sincronizada (áudio e vídeo ao vivo)</h3>
+<h4>Uso de mídia sincronizada (áudio e vídeo ao vivo)</h4>
 <p>Conteúdos multimídia ao vivo também devem ser acessíveis.</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Legendas obrigatórias para transmissões ao vivo</strong> (WCAG 1.2.4 – AA).</li>
-  <li class="px-0 list-group-item"><strong>Transcrição obrigatória para áudios e vídeos gravados</strong> (WCAG 1.2.1 – A). </li>
-  <li class="px-0 list-group-item"><strong>Audiodescrição recomendada para vídeos com informações visuais importantes</strong> (WCAG 1.2.5 – AA).</li>
+  <li class="px-0 list-group-item"><strong>Legendas obrigatórias para transmissões ao vivo</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/captions-live">WCAG 1.2.4 – AA</a>).</li>
+  <li class="px-0 list-group-item"><strong>Transcrição obrigatória para áudios e vídeos gravados</strong> (<a href="- [ ] 1.2.1 - Apenas áudio e apenas vídeo (pré-gravado) https://www.w3.org/WAI/WCAG22/Understanding/audio-only-and-video-only-prerecorded">WCAG 1.2.1 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Audiodescrição recomendada para vídeos com informações visuais importantes</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/audio-description-prerecorded">WCAG 1.2.5 – AA</a>).</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Se você faz lives, pode usar serviços como <a href="https://support.google.com/youtube/answer/3068031?hl=pt-BR&sjid=370227882928001301-SA" class="fw-bold" lang="en">YouTube Live Closed Captions</a> para legendas automáticas.</p>
 
-<h2>Tempo e animações</h2>
+<h3>Tempo e animações</h3>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Usuários devem poder ajustar ou desativar limites de tempo</strong> (WCAG 2.2.1 – A). </li>
-  <li class="px-0 list-group-item"><strong>Flashes intermitentes não podem ultrapassar 3 piscadas por segundo</strong> para evitar gatilhos de epilepsia (WCAG 2.3.1 – A). </li>
-  <li class="px-0 list-group-item"><strong>Usuários devem poder pausar, interromper ou ocultar animações automáticas.</strong> (WCAG 2.2.2 – AA)</li>
+  <li class="px-0 list-group-item"><strong>Usuários devem poder ajustar ou desativar limites de tempo</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">WCAG 2.2.1 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Flashes intermitentes não podem ultrapassar 3 piscadas por segundo</strong> para evitar gatilhos de epilepsia (<a href="https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold">WCAG 2.3.1 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Usuários devem poder pausar, interromper ou ocultar animações automáticas.</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide">WCAG 2.2.2 – A</a>)</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Para evitar desconforto, <strong>reduza movimentos excessivos</strong> no design e sempre ofereça um botão de pausa para animações.
 
-<h2 id="tamanho-e-rea-de-clique-dos-bot-es">Tamanho e área de clique dos botões</h2>
+<h3>Tamanho e área de clique dos botões</h3>
 <p>A norma determina que os botões e elementos interativos sejam de tamanho adequado para facilitar o toque e o clique, especialmente em dispositivos móveis.</p>
 
-<h3>Tamanho mínimo de botões e elementos interativos</h3>
+<h4>Tamanho mínimo de botões e elementos interativos</h4>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>O tamanho mínimo para elementos clicáveis é de 24px x 24px</strong> (WCAG 2.5.8 – AA). </li>
-  <li class="px-0 list-group-item"><strong>O recomendado para uma melhor experiência é 44px x 44px</strong> (WCAG 2.5.5 – AAA). </li>
+  <li class="px-0 list-group-item"><strong>O tamanho mínimo para elementos clicáveis é de 24px x 24px</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum.html">WCAG 2.5.8 – AA</a>). </li>
+  <li class="px-0 list-group-item"><strong>O recomendado para uma melhor experiência é 44px x 44px</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/target-size-enhanced.html">WCAG 2.5.5 – AAA</a>). </li>
   <li class="px-0 list-group-item"><strong>Se o botão for menor que 44px, ele deve ter espaçamento externo suficiente</strong> para evitar toques acidentais.</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Certifique-se de que <strong>botões tenham uma área de toque adequada</strong>, especialmente em dispositivos móveis:</p>
@@ -271,7 +271,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 </code></pre>
 <p>Isso evita que botões fiquem muito próximos, dificultando a interação para <strong>usuários com mobilidade reduzida</strong>.</p>
 
-<h3>Área de clique e espaçamento dos botões</h3>
+<h4>Área de clique e espaçamento dos botões</h4>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>Botões devem ter uma área de clique grande o suficiente</strong> para evitar erros de toque. </li>
   <li class="px-0 list-group-item"><strong>Não usar apenas ícones como botões</strong>, sem um <strong>rótulo acessível (<code class="language-html">aria-label</code> ou <code class="language-html">title</code>)</strong>. </li>
@@ -283,16 +283,16 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 </code></pre>
 <p>Isso garante que leitores de tela anunciem corretamente a função do botão.</p>
 
-<h2>Autenticação e Segurança</h2>
+<h3>Autenticação e Segurança</h3>
 <p>Usuários devem conseguir se autenticar sem barreiras desnecessárias.</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Evitar testes de função cognitiva</strong>, como desafios baseados em memorização ou cálculos (WCAG 3.3.7 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Evitar testes de função cognitiva</strong>, como desafios baseados em memorização ou cálculos (<a href="https://www.w3.org/WAI/WCAG22/Understanding/redundant-entry.html">WCAG 3.3.7 – A</a>). </li>
   <li class="px-0 list-group-item"><strong>CAPTCHAs devem ter alternativas acessíveis</strong>, como desafios auditivos ou perguntas simples. </li>
   <li class="px-0 list-group-item"><strong>Autenticação sem exigência de lembrar senha</strong>: Opções como login por e-mail ou biometria devem estar disponíveis.</li>
 </ul>
 <p><strong>Dica de implementação</strong>: Se for necessário usar CAPTCHA, forneça alternativas como um código enviado por e-mail.</p>
 
-<h2>Desempenho funcional e adaptação para diferentes usuários</h2>
+<h3>Desempenho funcional e adaptação para diferentes usuários</h3>
 <p>A experiência deve ser acessível para usuários com diferentes necessidades, incluindo:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>Navegação sem visão</strong>: Leitores de tela devem ser capazes de descrever todo o conteúdo. </li>
@@ -303,7 +303,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 </ul>
 <p><strong>Dica de implementação</strong>: Teste o site usando apenas o <strong>teclado e um leitor de tela</strong> como o NVDA ou VoiceOver.</p>
 
-<h1>Por que essa norma é um marco importante?</h1>
+<h2>Por que essa norma é um marco importante?</h2>
 <p>A publicação da <strong>ABNT NBR 17225:2025</strong> representa um avanço fundamental na acessibilidade digital no Brasil. Ela reforça a necessidade de pensar na diversidade dos usuários, desde pessoas com deficiência até aquelas com limitações temporárias ou situacionais.</p>
 <p>Além disso, sua adoção favorece <strong>a inovação e a responsabilidade social das empresas</strong>, garantindo que mais pessoas tenham autonomia no uso de produtos digitais.</p>
 <p>Para desenvolvedores, designers e gestores, essa norma não deve ser vista apenas como uma obrigação, mas como <strong>um guia para a criação de experiências mais inclusivas e eficientes</strong>.</p>
@@ -357,10 +357,10 @@ que enfrentam barreiras situacionais (como acessar um site sob forte luz do sol)
 <h2>Conclusão</h2>
 <p>A <strong>ABNT NBR 17225:2025</strong> estabelece padrões claros para garantir que todos possam navegar e interagir com conteúdos digitais sem barreiras. Se você desenvolve produtos digitais, <strong>não ignore essa norma</strong>: sua implementação melhora a experiência do usuário, amplia seu público e evita problemas legais.</p>
 <p>Se deseja aprofundar-se mais, recomendo ler a norma completa e começar a aplicá-la <strong>desde já</strong>. A acessibilidade digital é um caminho sem volta – e quanto mais cedo começarmos, melhor será para todos.</p>
-<p>📢 <strong>A acessibilidade digital não é apenas um diferencial competitivo — é um direito. Adotar a </strong>ABNT NBR 17225:2025** hoje significa não apenas cumprir normas, mas garantir que seu produto digital seja para todos. Você já começou essa adaptação? Compartilhe sua experiência nos comentários!&quot;</p>
+<p>📢 <strong>A acessibilidade digital não é apenas um diferencial competitivo — é um direito. Adotar a ABNT NBR 17225:2025</strong> hoje significa não apenas cumprir normas, mas garantir que seu produto digital seja para todos. Você já começou essa adaptação? Compartilhe sua experiência nos comentários!&quot;</p>
 <hr>
 
-<p>Esse texto não substitui o documento original (baixe o documento original - PDF), Nele há muito mais detalhes. Além dessas recomendações, o documento apresenta um check-list para ajudar a guiar a construção das interfaces seguindo as recomendações propostas. </p>
+<p>Esse texto não substitui o <a href="{{site.baseurl}}/files/norma-ABNT-17225-acessibilidade.pdf"></a>documento original (650kb, PDF)</a>. Nele há muito mais detalhes. Além dessas recomendações, o documento apresenta um check-list para ajudar a guiar a construção das interfaces seguindo as recomendações propostas. </p>
 <p>Abaixo, o vídeo do lançamento da ABNT NBR 17225:2025:</p>
 <div class="ratio ratio-16x9">
 <iframe src="https://www.youtube.com/embed/JelMJjz4doA" title="Lançamento da ABNT NBR 17225 – Acessibilidade digital para Web (Tradução de Audiodescrição)"></iframe>
