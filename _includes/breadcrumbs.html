@@ -6,7 +6,7 @@
       {% if forloop.last %}
         <li class="breadcrumb-item active">{{ page.title }}</li>
       {% else %}
-        {% if page.categories contains "Blog" %}<li class="breadcrumb-item"><a href="{{ site.baseurl }}/blog">Blog</a>{%endif%}
+        {% if page.categories contains "Blog" %}<li class="breadcrumb-item"><a href="{{ site.baseurl }}/blog.html">Blog</a>{%endif%}
         {% if page.categories contains "Episodios" %}<li class="breadcrumb-item"><a href="{{ site.baseurl }}/episodios.html">Episódios</a>{%endif%}
       {%else%}
         <li class="breadcrumb-item">
