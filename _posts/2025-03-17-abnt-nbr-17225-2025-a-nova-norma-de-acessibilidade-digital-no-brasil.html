@@ -18,8 +18,8 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <script>hljs.highlightAll();</script>
 
 
-<p>A acessibilidade digital tem avançado globalmente, e o Brasil dá mais um passo significativo com a <strong>ABNT NBR 17225:2025</strong>, a norma que estabelece requisitos de acessibilidade para conteúdos e aplicações web. Baseada nas <strong>Diretrizes de Acessibilidade para Conteúdo Web (WCAG 2.2)</strong> do W3C, a norma busca garantir que sites e sistemas sejam acessíveis para todas as pessoas, incluindo aquelas com deficiência, necessidades temporárias ou limitações situacionais.</p>
-<p>Mas como isso impacta o dia a dia de desenvolvedores, designers e gestores? Vamos explorar os principais pontos da norma e entender como ela impacta desenvolvedores, designers e gestores de produtos digitais.</p>
+<p>A acessibilidade digital tem avançado globalmente, e o Brasil dá mais um passo significativo com a <strong>ABNT NBR 17225:2025</strong>, a norma que estabelece requisitos de acessibilidade para conteúdos e aplicações web. Baseada nas <strong>Diretrizes de Acessibilidade para Conteúdo Web &mdash; <a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a></strong> (em inglês) do W3C, a norma busca garantir que sites e sistemas sejam acessíveis para todas as pessoas, incluindo aquelas com deficiência, necessidades temporárias ou limitações situacionais.</p>
+<p>Mas como isso impacta o dia a dia de desenvolvedores, designers e gestores? Vamos explorar os principais pontos da norma e entender como isso transforma a construção de produtos digitais.</p>
 
 <h2>O que é a ABNT e qual seu papel?</h2>
 <p>A <strong>ABNT (Associação Brasileira de Normas Técnicas)</strong> é o órgão responsável pela criação e padronização de normas técnicas no Brasil. Fundada em 1940, a ABNT atua em diversas áreas, incluindo <strong>engenharia, tecnologia, segurança, meio ambiente e acessibilidade</strong>.</p>
@@ -29,8 +29,8 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <h3>O Que é a ABNT NBR 17225:2025?</h3>
 <p>A <strong>ABNT NBR 17225:2025</strong> foi um trabalho de dois anos elaborado em um processo de colaboração de diversos especialistas, representando um avança ao cumprimento do artigo 63º da LBI. A norma define um conjunto de aproximadamente 150 <strong>requisitos e recomendações</strong> que visam eliminar barreiras no acesso a sites e aplicações web, tem como base os critérios da <strong>WCAG 2.2</strong> e estabelece dois tipos de conformidade:</p>
 <ol class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Conformidade Regular</strong>: Atendimento aos requisitos obrigatórios, garantindo alinhamento com os níveis <strong>A e AA da WCAG 2.2</strong>. </li>
-  <li class="px-0 list-group-item"><strong>Conformidade Plena</strong>: Além dos requisitos, incorpora todas as recomendações da norma, proporcionando <strong>uma experiência mais inclusiva e de alta qualidade</strong>.</li>
+  <li class="px-0 list-group-item"><strong>Conformidade Regular</strong>: atendimento aos requisitos obrigatórios, garantindo alinhamento com os níveis <strong>A e AA da WCAG 2.2</strong>. </li>
+  <li class="px-0 list-group-item"><strong>Conformidade Plena</strong>: além dos requisitos, incorpora todas as recomendações da norma, proporcionando <strong>uma experiência mais inclusiva e de alta qualidade</strong>.</li>
 </ol>
 <p>Dessa forma, a norma reforça a importância da acessibilidade digital em diversas frentes:</p>
 <ol class="list-group mb-3 list-group-flush list-group-numbered">
@@ -59,7 +59,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
       <li class="px-0 list-group-item">Nunca use cabeçalhos apenas para estilização.</li>
     </ul>
   </li>
-  <li class="px-0 list-group-item"><strong>Regiões semânticas</strong> (<code class="language-html">&lt;header&gt;</code>, <code class="language-html">&lt;nav&gt;</code>, <code class="language-html">&lt;main&gt;</code>, <code class="language-html">&lt;aside&gt;</code>, <code class="language-html">&lt;footer&gt;</code>) devem estar corretamente implementadas para facilitar a navegação por leitores de tela (WCAG 1.3.1 – A).</li>
+  <li class="px-0 list-group-item"><strong>Regiões semânticas</strong> (<code class="language-html" lang="en">&lt;header&gt;</code>, <code class="language-html" lang="en">&lt;nav&gt;</code>, <code class="language-html" lang="en">&lt;main&gt;</code>, <code class="language-html" lang="en">&lt;aside&gt;</code>, <code class="language-html" lang="en">&lt;footer&gt;</code>) devem estar corretamente implementadas para facilitar a navegação por leitores de tela (<a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">WCAG 1.3.1 – A</a>).</li>
   <li class="px-0 list-group-item"><strong>Listas (<code class="language-html">&lt;ul&gt;</code>, <code class="language-html">&lt;ol&gt;</code>, <code class="language-html">&lt;dl&gt;</code>)</strong> devem ser corretamente declaradas.
     <ul class="list-group ps-4  mb-3 list-group-flush list-group-numbered">
       <li class="px-0 list-group-item">Itens de lista (<code class="language-html">&lt;li&gt;</code>) nunca devem ficar soltos fora de uma <code class="language-html">&lt;ul&gt;</code> ou <code class="language-html">&lt;ol&gt;</code>.</li>
@@ -68,7 +68,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
   </li>
   <li class="px-0 list-group-item"><strong>Tabelas devem ser utilizadas apenas para dados estruturados</strong> e precisam incluir:
     <ul class="list-group ps-4 mb-3 list-group-flush list-group-numbered">
-      <li class="px-0 list-group-item">Cabeçalhos de tabela (<code class="language-html">&lt;th&gt;</code>) identificando colunas e linhas (WCAG 1.3.1 – A).</li>
+      <li class="px-0 list-group-item">Cabeçalhos de tabela (<code class="language-html">&lt;th&gt;</code>) identificando colunas e linhas (<a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">WCAG 1.3.1 – A</a>).</li>
       <li class="px-0 list-group-item">Atributos <code class="language-html">scope=&quot;col&quot;</code> ou <code class="language-html">scope=&quot;row&quot;</code> para indicar a função das células <code class="language-html">&lt;th&gt;</code>.</li>
       <li class="px-0 list-group-item">Evitar tabelas de leiaute; se forem usadas, não devem ter atributos semânticos. </li>
     </ul>
@@ -82,16 +82,16 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <p>A estrutura do código deve ser <strong>compatível com tecnologias assistivas</strong> e seguir as boas práticas de desenvolvimento acessível.</p>
 
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Título da página (<code class="language-html">&lt;title&gt;</code>) deve ser descritivo</strong> e refletir o conteúdo da página (WCAG 2.4.2 – A).</li>
-  <li class="px-0 list-group-item"><strong>O idioma da página deve ser especificado (<code class="language-html">lang=&quot;pt-br&quot;</code>)</strong> para que leitores de tela utilizem a pronúncia correta (WCAG 3.1.1 – A). </li>
-  <li class="px-0 list-group-item"><strong>Zoom do navegador não pode ser bloqueado</strong> e deve permitir ampliação de até 200% sem perda de conteúdo (WCAG 1.4.4 – AA). </li>
-  <li class="px-0 list-group-item"><strong>Mensagens de status devem ser anunciadas para leitores de tela</strong> sem exigir foco no elemento (WCAG 4.1.3 – AA). </li>
-  <li class="px-0 list-group-item"><strong>Elementos interativos devem ter um &quot;nome acessível&quot;</strong>, garantindo compatibilidade com leitores de tela (WCAG 4.1.2 – A).</li>
+  <li class="px-0 list-group-item"><strong>Título da página (<code class="language-html">&lt;title&gt;</code>) deve ser descritivo</strong> e refletir o conteúdo da página (<a href="https://www.w3.org/WAI/WCAG22/Understanding/page-titled">WCAG 2.4.2 – A</a>).</li>
+  <li class="px-0 list-group-item"><strong>O idioma da página deve ser especificado (<code class="language-html">lang=&quot;pt-br&quot;</code>, no caso de páginas com conteúdo escrito em português do Brasil)</strong> para que leitores de tela utilizem a pronúncia correta (<a href="https://www.w3.org/WAI/WCAG22/Understanding/language-of-page">WCAG 3.1.1 – A</a>). </li>
+  <li class="px-0 list-group-item"><strong>Zoom do navegador não pode ser bloqueado</strong> e deve permitir ampliação de até 200% sem perda de conteúdo (<a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">WCAG 1.4.4 – AA</a>). </li>
+  <li class="px-0 list-group-item"><strong>Mensagens de status devem ser anunciadas para leitores de tela</strong> sem exigir foco no elemento (<a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages">WCAG 4.1.3 – AA</a>). </li>
+  <li class="px-0 list-group-item"><strong>Elementos interativos devem ter um &quot;nome acessível&quot;</strong>, garantindo compatibilidade com leitores de tela (<a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value">WCAG 4.1.2 – A</a>).</li>
 </ul>
-<p><strong>Dica de implementação</strong>: Para garantir que mensagens dinâmicas sejam lidas por leitores de tela,  use ARIA live regions:</p>
+<p><strong>Dica de implementação</strong>: Para garantir que mensagens dinâmicas sejam lidas por leitores de tela,  use <span lang="en">ARIA live regions</span>:</p>
 <pre><code class="lang-html">
   &lt;div role="status" aria-live="polite"&gt;
-  Mensagem de erro: Preencha todos os campos obrigatórios.
+    Mensagem de erro: Preencha todos os campos obrigatórios.
   &lt;/div&gt;
 </code></pre>
 
@@ -99,7 +99,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <p>A norma segue as diretrizes da <strong>WCAG 2.2</strong> e define requisitos mínimos para facilitar a leitura e  garantir que o conteúdo seja ajustável conforme a necessidade do usuário.</p>
 <h3>Tamanho de fonte</h3>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Texto padrão deve ser ajustável sem perda de funcionalidade</strong>: O usuário deve poder aumentar a fonte em <strong>até 200%</strong> sem prejudicar a experiência ou cortar conteúdo (WCAG 1.4.4 – AA). </li>
+  <li class="px-0 list-group-item"><strong>Texto padrão deve ser ajustável sem perda de funcionalidade</strong>: O usuário deve poder aumentar a fonte em <strong>até 200%</strong> sem prejudicar a experiência ou cortar conteúdo (<a href="https://www.w3.org/WAI/WCAG22/Understanding/resize-text">WCAG 1.4.4 – AA</a>). </li>
   <li class="px-0 list-group-item"><strong>Texto em tamanho grande</strong>: O critério para definir um <strong>texto grande</strong> é:
     <ul class="list-group ps-4  mb-3 list-group-flush list-group-numbered">
       <li class="px-0 list-group-item">Pelo menos <strong>18pt (24px) em fonte normal</strong>.</li>
@@ -125,7 +125,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <h3>Espaçamento entre linhas e parágrafos</h3>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
   <li class="px-0 list-group-item"><strong>O espaçamento entre linhas (<code class="language-html">line-height</code>) deve ser no mínimo de 1.5x</strong> o tamanho da fonte. </li>
-  <li class="px-0 list-group-item"><strong>O espaçamento entre parágrafos deve ser pelo menos 2x o tamanho da fonte</strong> (WCAG 1.4.12 – AA). </li>
+  <li class="px-0 list-group-item"><strong>O espaçamento entre parágrafos deve ser pelo menos 2x o tamanho da fonte</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing">WCAG 1.4.12 – AA</a>). </li>
   <li class="px-0 list-group-item"><strong>O espaçamento entre palavras e letras também deve ser ajustável</strong>:</li>
   <li class="px-0 list-group-item"><strong>Espaçamento entre palavras ≥ 0.16x o tamanho da fonte</strong>.</li>
   <li class="px-0 list-group-item"><strong>Espaçamento entre letras ≥ 0.12x o tamanho da fonte</strong>.</li>
@@ -144,9 +144,9 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <h2>Contraste e cores</h2>
 <p>Para garantir legibilidade, a norma exige um <strong>contraste mínimo entre o texto e o fundo</strong>:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>4.5:1 para textos normais</strong> (WCAG 1.4.3 – AA). </li>
-  <li class="px-0 list-group-item"><strong>3:1 para elementos gráficos importantes</strong> (WCAG 1.4.11 – AA). </li>
-  <li class="px-0 list-group-item"><strong>Não usar cores como único indicativo de erro ou estado</strong> (WCAG 1.4.1 – A).</li>
+  <li class="px-0 list-group-item"><strong>4.5:1 para textos normais</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum">WCAG 1.4.3 – AA</a>).</li>
+  <li class="px-0 list-group-item"><strong>3:1 para elementos gráficos importantes</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast">WCAG 1.4.11 – AA</a>). </li>
+  <li class="px-0 list-group-item"><strong>Não usar cores como único indicativo de erro ou estado</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/use-of-color">WCAG 1.4.1 – A</a>).</li>
 </ul>
 
 <p><strong>Dica de implementação</strong>: Utilize ferramentas como <a href="https://coolors.co/contrast-checker" class="fw-bold">Color Contrast Checker</a> para testar a relação de contraste entre cores.</p>
@@ -188,7 +188,7 @@ legend: 'Imagem retirada da página <a href="https://jornalistainclusivo.com/bra
 <h2>Formulários e entrada de dados</h2>
 <p>Os formulários precisam ser compreensíveis e operáveis por todos os usuários. Isso inclui:</p>
 <ul class="list-group mb-3 list-group-flush list-group-numbered">
-  <li class="px-0 list-group-item"><strong>Todos os campos de formulário devem ter rótulos (<code class="language-html">&lt;label&gt;</code> explicitamente associados ao <code class="language-html">&lt;input&gt;</code>)</strong> (WCAG 1.3.1 – A). </li>
+  <li class="px-0 list-group-item"><strong>Todos os campos de formulário devem ter rótulos (<code class="language-html">&lt;label&gt;</code> explicitamente associados ao <code class="language-html">&lt;input&gt;</code>)</strong> (<a href="https://www.w3.org/WAI/WCAG22/Understanding/info-and-relationships">WCAG 1.3.1 – A</a>). </li>
   <li class="px-0 list-group-item"><strong>Campos obrigatórios devem ser identificados antes do envio</strong>, evitando que o usuário descubra o erro apenas ao submeter o formulário. </li>
   <li class="px-0 list-group-item"><strong>Mensagens de erro devem ser descritivas e sugerir correções</strong> (WCAG 3.3.3 – AA). </li>
   <li class="px-0 list-group-item"><strong>Evite depender apenas de cor para indicar campos com erro</strong>. Deve-se usar também ícones, mensagens de texto e <code class="language-html">aria-describedby</code>. </li>
