@@ -1,0 +1,55 @@
+---
+layout: page
+
+title: Glossário
+permalink: glossario.html
+---
+<div class="row">
+
+  <aside class="col-2 sticky-top">
+    <div class="indice-letras">
+      {% assign termos = site.data.glossario %}
+      {% if termos %}
+      <p><small>Navegue pelas letras</small></p>
+      {% assign termos_ordenados = termos | sort: "termo" %}
+      {% assign letras_usadas = "" | split: "" %}
+      {% for item in termos_ordenados %}
+      {% assign letra = item.termo | slice: 0,1 | upcase %}
+      {% unless letras_usadas contains letra %}
+      {% assign letras_usadas = letras_usadas | push: letra %}
+      {% endunless %}
+      {% endfor %}
+      {% assign letras_usadas = letras_usadas | sort %}
+      <ul>
+        {% for letra in letras_usadas %}
+        <li><a href="#{{ letra | downcase }}">{{ letra | upcase }}</a></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <p><strong>⚠️ termos não carregados</strong></p>
+      {% endif %}
+    </div>
+  </aside>
+
+
+  <div class="col-10">
+    {% if termos %}
+    {% for letra in letras_usadas %}
+    <h2 id="{{ letra | downcase }}">{{ letra | upcase }}</h2>
+    <dl class="lista-termos">
+      {% for item in termos_ordenados %}
+      {% assign primeira_letra = item.termo | slice: 0,1 | upcase %}
+      {% if primeira_letra == letra %}
+      <dt><strong>{{ item.termo }}</strong></dt>
+      <dd>{{ item.definicao }}</dd>
+      {% endif %}
+      {% endfor %}
+
+    </dl>
+    {% endfor %}
+    {% else %}
+    <p>nenhum termo encontrado no glossário.</p>
+    {% endif %}
+  </div>
+
+</div>

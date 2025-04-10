@@ -1,0 +1,80 @@
+- termo: Hover Trap (Armadilha de Hover)
+  definicao: Problema onde um elemento interativo fica ativo apenas via hover do mouse, tornando-o inacessível para teclado e leitores de tela.
+
+- termo: Ícones Acessíveis
+  definicao: Ícones com aria-label ou title para que leitores de tela interpretem seu significado corretamente.
+
+- termo: JSON-LD para Acessibilidade
+  definicao: Formato de metadados estruturados para melhorar a acessibilidade e interpretação de conteúdo por assistentes de voz.
+
+- termo: JavaScript Acessível
+  definicao: Boas práticas de desenvolvimento JS para garantir interatividade sem comprometer a acessibilidade (exemplo- evitar manipulação direta do foco sem necessidade).
+
+- termo: Keyboard Navigation (Navegação por Teclado)
+  definicao: Garantia de que todos os elementos interativos podem ser acessados via tabulação (Tab, Shift+Tab, Enter, Esc).
+
+- termo: Libras Digital
+  definicao: Integração de avatares de Libras para tradução automática de conteúdos em vídeo e texto.
+
+- termo: Legenda Oculta (Closed Caption - CC)
+  definicao: Legendas automáticas ou manuais para tornar vídeos acessíveis a surdos e ensurdecidos.
+
+- termo: Modo Alto Contraste
+  definicao: Opção que permite maior visibilidade para usuários com baixa visão.
+
+- termo: Markup Acessível
+  definicao: Estrutura HTML que segue padrões de acessibilidade e semântica correta.
+
+- termo: Navegação Estruturada
+  definicao: Implementação de nav, main, aside e landmark roles para auxiliar a navegação por leitores de tela.
+
+- termo: Otimização para Assistentes de Voz
+  definicao: Ajuste de conteúdos para interpretação por Alexa, Google Assistant e Siri.
+
+- termo: Overlay Acessível
+  definicao: Modais e pop-ups projetados para serem facilmente fechados e navegáveis via teclado.
+
+- termo: Progressive Enhancement (Aprimoramento Progressivo)
+  definicao: Técnica que prioriza funcionalidade básica e adiciona melhorias sem comprometer acessibilidade.
+
+- termo: Padrões de Acessibilidade
+  definicao: Normas como WCAG 2.1, Section 508, EAA (European Accessibility Act).
+
+- termo: QR Code Acessível
+  definicao: Códigos QR que oferecem alternativas em texto ou áudio para usuários com deficiência visual.
+
+- termo: Reader Mode (Modo Leitura)
+  definicao: Modo que melhora a acessibilidade removendo distrações visuais.
+
+- termo: Rótulos Visíveis e Ocultos
+  definicao: Uso de visually-hidden para fornecer informações a leitores de tela sem poluir a interface.
+
+- termo: SVG Acessível
+  definicao: Uso de <title> e <desc> dentro de SVGs para garantir compreensão em leitores de tela.
+
+- termo: Skip Links (Links de Pular para o Conteúdo)
+  definicao: Links invisíveis que permitem usuários de leitores de tela pularem diretamente para o conteúdo principal.
+
+- termo: Tabindex
+  definicao: Controle da ordem de navegação por teclado, evitando armadilhas de foco.
+
+- termo: Tema Escuro Acessível
+  definicao: Implementação de temas que mantêm contraste adequado para usuários com baixa visão.
+
+- termo: Uso de Cor com Informação Redundante
+  definicao: Evita depender exclusivamente de cores para transmitir informações, essencial para daltônicos.
+
+- termo: UX Inclusivo
+  definicao: Abordagem de design que considera acessibilidade desde o início do projeto.
+
+- termo: Validação Acessível
+  definicao: Mensagens de erro que são perceptíveis tanto visualmente quanto por leitores de tela.
+
+- termo: VoiceOver
+  definicao: Leitor de tela nativo do macOS/iOS.
+
+- termo: WCAG (Web Content Accessibility Guidelines)
+  definicao: Conjunto de diretrizes para garantir acessibilidade digital.
+
+- termo: WebAIM
+  definicao: Organização que fornece diretrizes e ferramentas para acessibilidade na web.
