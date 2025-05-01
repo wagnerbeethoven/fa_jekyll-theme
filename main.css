@@ -14,6 +14,7 @@
   --social-icon-color-linkedin: #0a66c2;
   --social-icon-color-twitter: #1da1f2;
   --social-icon-color-pinterest: #e60023;
+  --social-icon-color-bluesky: #0085ff;
 }
 
 .accordion-button:after {
@@ -768,6 +769,9 @@ a.social-icon-twitter {
 
 a.social-icon-pinterest {
   color: var(--social-icon-color-pinterest) !important;
+}
+a.social-icon-bluesky {
+  color: var(--social-icon-color-bluesky) !important;
 }
 
 .banner-loja::after {

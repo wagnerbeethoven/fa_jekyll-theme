@@ -59,18 +59,21 @@ network:
   - name: TikTok
     link: http://www.tiktok.com/@focoacessivel
     icon: '<span class="fa-brands fa-tiktok"></span>'
-  - name: Facebook
-    link: http://www.facebook.com/focoacessivel
-    icon: '<span class="fa-brands fa-facebook"></span>'
-  - name: Pinterest
-    link: https://pinterest.com/focoacessivel/
-    icon: '<span class="fa-brands fa-pinterest"></span>'
-  - name: Twitter
-    link: https://x.com/intent/follow?screen_name=foco_acessivel
-    icon: '<span class="fa-brands fa-twitter"></span>'
-  - name: Threads
-    link: https://www.threads.net/@focoacessivel
-    icon: '<span class="fa-brands fa-threads"></span>'
+  - name: Bluesky
+    link: https://bsky.app/profile/focoacessivel.com.br
+    icon: '<i class="fa-brands fa-bluesky"></i>'
+  # - name: Facebook
+  #   link: http://www.facebook.com/focoacessivel
+  #   icon: '<span class="fa-brands fa-facebook"></span>'
+  # - name: Pinterest
+  #   link: https://pinterest.com/focoacessivel/
+  #   icon: '<span class="fa-brands fa-pinterest"></span>'
+  # - name: Twitter
+  #   link: https://x.com/intent/follow?screen_name=foco_acessivel
+  #   icon: '<span class="fa-brands fa-twitter"></span>'
+  # - name: Threads
+  #   link: https://www.threads.net/@focoacessivel
+  #   icon: '<span class="fa-brands fa-threads"></span>'
 
 platforms:
   - name: Amazon Music
@@ -79,20 +82,20 @@ platforms:
     link: "https://www.subscribeonandroid.com/anchor.fm/s/e14f7d9c/podcast/rss"
   - name: Apple
     link: "https://podcasts.apple.com/us/podcast/foco-acessível/id1690286033"
-  - name: Castbox
-    link: https://castbox.fm/ch/5437486
+  # - name: Castbox
+  #   link: https://castbox.fm/ch/5437486
   - name: Deezer
     link: "https://www.deezer.com/pt/show/6060897"
-  - name: Overcast
-    link: "https://overcast.fm/p4283328-xrLc4f"
-  - name: Pocket Casts
-    link: "https://pca.st/9m9todni"
-  - name: Radiopublic
-    link: "https://radiopublic.com/foco-acessvel-GKQpMl"
+  # - name: Overcast
+  #   link: "https://overcast.fm/p4283328-xrLc4f"
+  # - name: Pocket Casts
+  #   link: "https://pca.st/9m9todni"
+  # - name: Radiopublic
+  #   link: "https://radiopublic.com/foco-acessvel-GKQpMl"
   - name: Spotify
     link: "https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL"
-  - name: Tune In
-    link: "http://tun.in/ptZAV"
+  # - name: Tune In
+  #   link: "http://tun.in/ptZAV"
   - name: Youtube
     link: "https://www.youtube.com/@focoacessivel?sub_confirmation=1"
   - name: Youtube Music
