@@ -2,8 +2,7 @@
     <div class="pulsaDelay">Quer ajudar o<br> <span class="fw-bold">{{site.title}}</span>?</div>
 </button>
 
-<div class="modal modal-lg  fade" data-bs-backdrop="static" id="support" tabindex="-1" aria-labelledby="supportLabel"
-    aria-hidden="true">
+<div class="modal modal-lg  fade" data-bs-backdrop="static" id="support" tabindex="-1" aria-labelledby="supportLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -11,38 +10,37 @@
                 <button type="button" title="Clique para fechar" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body px-0">
-                <p class="px-3">Existem várias maneiras de ajudar o podcast a se manter firme e forte! Todas as doações são usadas para pagar nosso editor, comprar equipamentos e manter os serviços necessários para manter o podcast no ar.</p>
+                <p class="px-3">Existem várias maneiras de apoiar o podcast para que ele continue no ar com conteúdo gratuito, acessível e de qualidade. Toda contribuição ajuda a cobrir os custos com edição, equipamentos e plataformas de distribuição.</p>
                 <p class="px-3 pb-4"><strong>Cada ajuda é super importante e faz toda a diferença</strong></p>
                 <div class="accordion accordion-flush" id="accordionSupport">
                     <div class="accordion-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Por Pix</button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="false" aria-controls="collapse-1">Contribua com qualquer valor via PIX</button>
                         </h3>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
+                        <div id="collapse-1" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-12 col-lg-8">
-                                        <p>Para ajudar o podcast, basta <a href="https://nubank.com.br/cobrar/2p5k/65d0e131-9703-47c2-bce0-169d918ffb12"  ><strong>acessar o link</strong></a> e transferir qualquer quantia. Ao fazer isso, você será redirecionado para uma nova aba com o QR code do Nubank!</p>
+                                        <p>Para ajudar o podcast, basta <a href="https://nubank.com.br/cobrar/2p5k/681510b3-1ca4-4547-89b3-85e0a5610d00"  ><strong>acessar o link</strong></a> e transferir qualquer quantia. Ao fazer isso, você será redirecionado para uma nova aba com o QR code do Nubank!</p>
                                         <p>Caso você não consigar acessar o link, abaixo disponibilizamos a chave-aleatória para transferência e o QR code.</p>
-                                        <p><strong>Chave-aleatória</strong> <br> Clique em cima da chave-aleatória abaixo e cole no seu aplicativo de banco.</p>
-                                        <div class="mt-3 col-12 rounded-1 p-2 bg-secondary text-truncate text-white">00020126580014BR.GOV.BCB.PIX01365686d2d5-4e24-4920-8053-38b20e86c4835204000053039865802BR5925Wagner Beethoven Martins 6009SAO PAULO62140510PxOUyNMvCp630494F1</div>
+                                        <p><strong>Chave-aleatória</strong> <br> Use a chave aleatória abaixo no seu app de banco:</p>
+                                        <div class="mt-3 col-12 rounded-1 p-2 bg-secondary text-truncate text-white">00020126840014BR.GOV.BCB.PIX0136093b198b-6a34-4603-8b80-38a8e13699fe0222Obrigado por colaborar5204000053039865802BR5924Wagner Beethoven Martins6009SAO PAULO62140510leEpb5pJ0V63042541</div>
                                     </div>
                                     <div class="col-12 col-lg-4">
-                                            <strong class="mt-0 d-block">QR Code</strong>
-                                            <img style="width: 350px; height: auto" class="d-block img-fluid mx-auto" src="{{ site.baseurl }}/img/qrcode-nubank.png" alt="Aponte a sua camera para ler o QR Code">
-                                        </div>
+                                        <strong class="mt-0 d-block">QR Code</strong>
+                                        <img style="width: 350px; height: auto" class="d-block img-fluid mx-auto" src="{{ site.baseurl }}/img/qrcode-nubank.png" alt="Aponte a sua camera para ler o QR Code">
                                     </div>
-                                
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Por PayPal  
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                Doe via PayPal 
                             </button>
                         </h3>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
+                        <div id="collapse-2" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
                                 <p>Por meio do PayPal, você pode contribuir com o podcast de diversas formas: uma única vez, através de doações recorrentes mensais ou anuais, e também usando seu cartão de crédito. Clique no botão abaixo para abrir uma nova aba e fazer a sua contribuição!</p>
                                 <div class="text-center pt-3">
@@ -60,22 +58,35 @@
                     </div>
                     <div class="accordion-item">
                         <h3 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Não tenho dinheiro, mas gostaria de apoiar!
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                Compre na nossa loja
+
                             </button>
                         </h3>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
+                        <div id="collapse-3" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
                             <div class="accordion-body">
-                                <p>Que legal que você quer apoiar de alguma forma! Existem outras maneiras de ajudar além de contribuições financeiras.</p>
-                                <p>Você pode compartilhar os episódios do podcast com seus amigos e nas nos seguir em nossas redes sociais ({% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}"   title="Nos acompanhe também no {{item.name}} - nova aba" rel="noopener noreferrer" >{{item.name}}</a></span>{% endfor %}), deixar comentários e avaliações nas plataformas de podcast, e até mesmo enviar sugestões de temas ou convidados.</p>
+                                <p>Uma forma prática de apoiar o Foco Acessível é comprando na nossa loja online! Tem camisetas, canecas, ecobags, pôsteres e outros produtos com mensagens de inclusão, acessibilidade e diversidade. <br> Parte de cada venda vai para o podcast e para instituições que apoiam pessoas com deficiência.</p>     
+                                <p><i class="fa-solid fa-cart-shopping"></i><span class="ms-2">Acesse a loja agora</span> <a class="button shop-item-link" href="http://umapenca.com/focoacessivel">umapenca.com/focoacessivel</a></p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                Apoie mesmo sem doar dinheiro
+                            </button>
+                        </h3>
+                        <div id="collapse-4" class="accordion-collapse collapse" data-bs-parent="#accordionSupport">
+                            <div class="accordion-body">
+                                <p>Que legal que você quer apoiar de alguma formae ainda assim você pode ajudar MUITO!</p>
+                                <p>Compartilhe os episódios com amigos, siga nas redes sociais  ({% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}">{{item.name}}</a></span>{% endfor %}), avalie nas plataformas de podcast e envie sugestões de temas ou convidados, além de feedbacks para o e-mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
                                 <p>Cada forma de apoio é muito valiosa e ajuda o podcast a crescer!</p>                          
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-               
             </div>
             <div class="modal-footer border-0">
                 <button type="button" title="Clique para fechar" class="btn btn-outline-secondary"

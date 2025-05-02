@@ -1,0 +1,17 @@
+
+<li class="h-100 col-12 col-md-3 shop-item">
+  <div class="position-relative">
+    <figure class="ratio ratio-1x1">
+      <img class="rounded img-fit-cover border img-fluid shop-item-picture" src="{{ item.foto }}" alt="{{ item.alt }}">
+    </figure>
+    <small class="d-block">{{ item.tipo }}</small>
+    <h3 class="shop-item-title fs-6 m-0 p-0">{{ item.titulo }}</h3>
+    <p>
+      <span class="d-blockshop-item-price">{{ item.valor }}</span>
+      <span class="d-block mb-3 shop-item-price">{{ item.condicao }}</span>
+    </p>
+    <a class="button stretched-link shop-item-link" href="{{ item.link }}">
+      <i class="fa-solid fa-cart-shopping"></i><span class="ms-2">Compre o item</span>
+    </a>
+  </div>
+</li>

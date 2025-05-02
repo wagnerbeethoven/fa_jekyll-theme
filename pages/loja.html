@@ -4,34 +4,30 @@ title: "Loja"
 permalink: loja.html
 # image: https://raw.githubusercontent.com/focoacessivel/pictures/main/page_loja.jpg
 alt: "Ilustração de várias bananas formando um gesto com a mão onde os dedos indicado, médio e o dedo estão juntos e levantados e os demais abaixados"
-summary: '<p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnologia — com propósito.</p><p><em>Ao comprar, você apoia o podcast Foco Acessível e ajuda a ampliar vozes que lutam por uma tecnologia mais justa para todas as pessoas.</em></p><p><small>Ao clicar nos links abaixo, você será redirecionado para o site: <a class="fw-bold" href="http://umapenca.com/focoacessivel">http://umapenca.com/focoacessivel</a></small></p>'
+summary: '<p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnologia — com propósito</p><p><em>Ao comprar, você apoia o podcast Foco Acessível e ajuda a ampliar vozes que lutam por uma tecnologia mais justa para todas as pessoas.</em></p><p><small>Ao clicar nos links abaixo, você será redirecionado para o site: <a class="fw-bold" href="http://umapenca.com/focoacessivel">http://umapenca.com/focoacessivel</a> do respectivo produto.</small></p>'
 # legend: Ilustração criada por Uma Penca
 ---
 
 <div class="programs">
-    <ul class="row">
-        {% for item in site.data.loja.item %}
-        <li class="col-12 col-md-4 col-lg-3 pb-5 mb-5 shop-item text-center">
-            <img class="rounded img-fluid shop-item-picture" src="{{item.picture}}" alt="{{item.alt}}">
-            <h4 class="shop-item-title fs-5 mb-2">{{item.name}}</h4>
-            <div class="shop-item-price mb-2">{{item.price}}</div>
-            <a class="button" href="{{item.link}}" class="shop-item-link"><i class="fa-solid fa-cart-shopping"></i><span class="mx-2">Compre o item</span> <i class="fa-solid fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: -45deg;" ></i></a>
-        </li>
+    <ul class="row list-unstyled">
+        {% for item in site.data.loja.itens %}
+        {% include produtos-loop.html %}
         {% endfor %}
-    </ul>
+      </ul>
+      
 </div>
 
 
-<section class="section-faq">
-    <h3 class="section-title text-center fs-4 mb-1">Perguntas frequentes</h3>
+<section class="section-faq" id="faq">
+    <h3 class="section-title text-center mb-1">Perguntas frequentes</h3>
 
     <div class="col-12 col-md-8 mx-auto">
         <div class="accordion accordion-flush" id="faq">
             <!-- FAQ 1 -->
             <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="false" aria-controls="faq-collapse-1">Por que a loja do Foco Acessível foi criada na plataforma Uma Penca/Chico Rei?</button>
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="false" aria-controls="faq-collapse-1">Por que a loja do Foco Acessível foi criada na plataforma Uma Penca?</button>
                 </h2>
-                <div id="faq-collapse-1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Porque a <strong>Chico Rei é referência em qualidade</strong>. Os produtos têm ótimo acabamento, durabilidade e conforto — algo essencial para oferecer uma experiência positiva a quem compra.</div></div>
+                <div id="faq-collapse-1" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Porque a plataforma Uma Penca é um braço da <strong>Chico Rei</strong>, empresa que é referência pela qualidade e o impacto social. Os produtos têm ótimo acabamento, durabilidade e conforto — algo essencial para oferecer uma experiência positiva a quem compra.</div></div>
             </div>
             <!-- FAQ 2 -->
             <div class="accordion-item">
@@ -55,80 +51,94 @@ summary: '<p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnol
                 <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-4" aria-expanded="false" aria-controls="faq-collapse-4">Como o valor da minha compra é dividido?</button>
                 </h2>
                 <div id="faq-collapse-4" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
-                    <p>A transparência é essencial. Veja abaixo a divisão dos valores entre a plataforma, o podcast e o Instituto Bruno:</p>
-                    <table class="table table-bordered table-striped table-hover table-sm mb-0">
-                        <caption class="text-center">Tabela de valores</caption>
-                            <thead>
+                    <p>A transparência é essencial. Veja abaixo a divisão dos valores entre Foco Acessível, Instituto Bruno e a Uma Penca.</p>
+                    <div class="table-responsive"><table class="table table-bordered table-striped table-hover table-sm mb-0">
+                        <caption class="caption-top text-center">Tabela de valores</caption>
+                        <thead class="table-dark">
                             <tr>
-                                <th>Produto</th>
-                                <th>Foco Acessível (%)</th>
-                                <th>Doação (%)</th>
-                                <th>Plataforma (%)</th>
-                                <th>Valor Total (R$)</th>
+                                <th scope="col">Produto</th>
+                                <th scope="col">Foco Acessível</th>
+                                <th scope="col">Doação</th>
+                                <th scope="col">Plataforma</th>
+                                <th scope="col">Valor Total</th>
                             </tr>
-                            </thead>
-                            <tbody>
+                        </thead>
+                        <tbody class="table-group-divider">
                             <tr>
-                                <th class="text-center">Camisas</th>
-                                <td class="text-center">25,41</td>
-                                <td class="text-center">7,14</td>
-                                <td class="text-center">67,45</td>
-                                <td class="text-center">70,00</td>
-                            </tr>
-                            <tr>
-                                <th class="text-center">Caneca</th>
-                                <td class="text-center">19,47</td>
-                                <td class="text-center">5,45</td>
-                                <td class="text-center">75,08</td>
-                                <td class="text-center">55,00</td>
+                                <th scope="row">Camiseta</th>
+                                <td>25,41%</td>
+                                <td>7,14%</td>
+                                <td>67,44%</td>
+                                <td>R$ 70,00</td>
                             </tr>
                             <tr>
-                                <th class="text-center">Bottons</th>
-                                <td class="text-center">21,48</td>
-                                <td class="text-center">4,76</td>
-                                <td class="text-center">73,76</td>
-                                <td class="text-center">21,00</td>
+                                <th scope="row">Camiseta Infantil</th>
+                                <td>20,55%</td>
+                                <td>7,69%</td>
+                                <td>71,75%</td>
+                                <td>R$ 65,00</td>
                             </tr>
                             <tr>
-                                <th class="text-center">Imãs</th>
-                                <td class="text-center">21,48</td>
-                                <td class="text-center">4,76</td>
-                                <td class="text-center">73,76</td>
-                                <td class="text-center">21,00</td>
+                                <th scope="row">Dryfit</th>
+                                <td>33,30%</td>
+                                <td>6,25%</td>
+                                <td>56,13%</td>
+                                <td>R$ 80,00</td>
                             </tr>
-
-
                             <tr>
-                                <th class="text-center">Pôster A3</th>
-                                <td class="text-center">18,50</td>
-                                <td class="text-center">7,93</td>
-                                <td class="text-center">73,57</td>
-                                <td class="text-center">63,10</td>
-                              </tr>
-                              <tr>
-                                <th class="text-center">Pôster A4</th>
-                                <td class="text-center">25,33</td>
-                                <td class="text-center">10,84</td>
-                                <td class="text-center">63,83</td>
-                                <td class="text-center">46,10</td>
-                              </tr>
-                              <tr>
-                                <th class="text-center">Pôster A5</th>
-                                <td class="text-center">31,48</td>
-                                <td class="text-center">13,47</td>
-                                <td class="text-center">55,05</td>
-                                <td class="text-center">37,10</td>
-
-
-
-                            </tbody>
-                        </table>
-                        
-                        <p>O restante fica com a plataforma Uma Penca/Chico Rei, que cuida da produção, logística e gestão do pedido.</p>
-
-
-
-                </div></div>
+                                <th scope="row">Caneca</th>
+                                <td>19,47%</td>
+                                <td>5,45%</td>
+                                <td>75,07%</td>
+                                <td>R$ 55,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Ecobag</th>
+                                <td>17,85%</td>
+                                <td>5,00%</td>
+                                <td>60,48%</td>
+                                <td>R$ 60,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kit de Bottons</th>
+                                <td>21,48%</td>
+                                <td>4,76%</td>
+                                <td>73,76%</td>
+                                <td>R$ 21,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kit de Imãs</th>
+                                <td>21,48%</td>
+                                <td>4,76%</td>
+                                <td>73,76%</td>
+                                <td>R$ 21,00</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pôster A3</th>
+                                <td>18,51%</td>
+                                <td>7,93%</td>
+                                <td>73,56%</td>
+                                <td>R$ 63,10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pôster A4</th>
+                                <td>25,34%</td>
+                                <td>10,84%</td>
+                                <td>63,82%</td>
+                                <td>R$ 46,10</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pôster A5</th>
+                                <td>31,48%</td>
+                                <td>13,47%</td>
+                                <td>55,04%</td>
+                                <td>R$ 37,10</td>
+                            </tr>
+                        </tbody>
+                    </table></div>
+                    <p>O restante fica com a plataforma Uma Penca, que cuida da produção, logística e gestão do pedido.</p>
+                </div>
+            </div>
             </div>
             <!-- FAQ 5 -->
             <div class="accordion-item">
@@ -159,19 +169,25 @@ summary: '<p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnol
                 <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-9" aria-expanded="false" aria-controls="faq-collapse-9">Que formas de pagamento são aceitas?</button>
                 </h2>
                 <div id="faq-collapse-9" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">A loja aceita cartões de crédito e no Pix, de forma segura e processada pela própria plataforma.
-                    <ul class="list-group mt-3 mx-auto list-group-horizontal">
-                        <li class="list-group-item"><img height="32px" alt="Pagar com Elo" src="{{site.baseurl}}/img/loja/forma-pagamento/elo.svg"></li>
-                        <li class="list-group-item"><img height="32px" alt="Pagar com Master" src="{{site.baseurl}}/img/loja/forma-pagamento/master.svg"></li>
-                        <li class="list-group-item"><img height="32px" alt="Pagar com visa" src="{{site.baseurl}}/img/loja/forma-pagamento/visa.svg"></li>
-                        <li class="list-group-item"><img height="32px" alt="Pagar com Pix" src="{{site.baseurl}}/img/loja/forma-pagamento/pix.svg"></li>
-                      </ul>
+                    <div class="row">
+                        <div class="col m-3 text-center"><img height="32px" alt="Pagar com Elo" src="{{site.baseurl}}/img/loja/forma-pagamento/elo.svg"></div>
+                        <div class="col m-3 text-center"><img height="32px" alt="Pagar com Master" src="{{site.baseurl}}/img/loja/forma-pagamento/master.svg"></div>
+                        <div class="col m-3 text-center"><img height="32px" alt="Pagar com visa" src="{{site.baseurl}}/img/loja/forma-pagamento/visa.svg"></div>
+                        <div class="col m-3 text-center"><img height="32px" alt="Pagar com Pix" src="{{site.baseurl}}/img/loja/forma-pagamento/pix.svg"></div>
+                      </div>
                 </div></div>
             </div>
             <!-- FAQ 10 -->
             <div class="accordion-item">
-                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-10" aria-expanded="false" aria-controls="faq-collapse-10">O que é é e como funciona o cupom <mark>ACESSIVEL5</mark> na primeira compra?</button>
+                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-10" aria-expanded="false" aria-controls="faq-collapse-10">Por que os produtos não têm cupom de desconto na primeira compra?</button>
                 </h2>
-                <div id="faq-collapse-10" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Você pode usar o cupom <mark>ACESSIVEL5</mark> para garantir 5% de desconto na sua primeira compra na nossa loja. Basta inseri-lo no campo "Cupom de Desconto" antes de finalizar o pedido. Válido para todos os produtos. 💙</div></div>
+                <div id="faq-collapse-10" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">
+                    <p>Sabemos como um cupom de boas-vindas pode fazer diferença na hora de decidir uma compra. No entanto, os produtos da loja têm margens de ganho muito pequenas, porque escolhemos manter preços justos e, ao mesmo tempo, dividir parte do valor com iniciativas importantes.</p>
+                    <p>Por exemplo, os pôsteres são produzidos com qualidade e enviados sob demanda pela plataforma parceira, e mesmo assim, fazemos questão de doar R$ 5,00 ao Instituto Bruno e garantir R$ 11,68 para o podcast Foco Acessível, mantendo o propósito do projeto vivo.</p>
+                    <p>Com esse compromisso, a margem restante é pequena demais para permitir descontos adicionais — sem comprometer a sustentabilidade da loja e das causas que apoiamos.</p>
+                    <p>Mesmo sem cupom, sua compra faz uma enorme diferença. Você está ajudando a manter um podcast sobre acessibilidade no ar e apoiando uma instituição que transforma vidas.</p>
+                    <p>Obrigado por estar com a gente! 💜</p>
+                </div></div>
             </div>
         </div>
     </div>

@@ -1,38 +1,36 @@
-item-destaque:
-  - name: Acabe com o capacitismo, agora!
-    price: R$ 8,50
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/bottons.jpg"
+itens:
+  - titulo: 'Eu sou uma pessoa defensora da acessibilidade'
+    tipo: Kit de Bottons
+    valor: '21,00'
+    condicao: 'Até 3x R$ 7,00 sem juros'
+    link: 'https://umapenca.com/focoacessivel/bottons/eu-sou-uma-pessoa-defensora-da-acessibilidade-243466.html'
+    foto: 'https://umapenca.imgix.net/243466/6638e96a-782f-42d9-be2c-2ef297acd148.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
     alt: a
-  - name: Nem toda deficiência é visível
-    price: R$ 45,00
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/caderneta.jpg"
+  - titulo: 'Diversidade Importa!'
+    tipo: Caneca
+    valor: '55,00'
+    condicao: 'Até 3x R$ 18,33 sem juros'
+    link: 'https://umapenca.com/focoacessivel/caneca/diversidade-importa-67037.html'
+    foto: 'https://umapenca.imgix.net/67037/c7b7583c-c04e-4bef-b3dd-d39b20cf70c1.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
     alt: a
-  - name: Todo mundo é bem vindo aqui
-    price: R$ 84,90
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/camisa 1.jpg"
+  - titulo: 'Capacitismo'
+    tipo: Camiseta 
+    valor: '70,00'
+    condicao: 'Até 3x R$ 23,33 sem juros'
+    link: 'https://umapenca.com/focoacessivel/camiseta/capacitismo-67074.html'
+    foto: 'https://umapenca.imgix.net/67074/13ff390d-7f25-4484-8ee9-140fb928f2fa.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
     alt: a
-
-item:
-  - name: Acabe com o capacitismo, agora!
-    price: R$ 8,50
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/bottons.jpg"
+  - titulo: 'Acabe com o capacitismo'
+    tipo: Kit de Imãs 
+    valor: '21,00'
+    condicao: 'Até 3x R$ 7,00 sem juros'
+    link: 'https://umapenca.com/focoacessivel/ima/acabe-com-o-capacitismo-243471.html'
+    foto: 'https://umapenca.imgix.net/243471/f8ebc0f5-6ab6-4af0-b536-8e238897f0a2.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
     alt: a
-  - name: Nem toda deficiência é visível
-    price: R$ 45,00
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/caderneta.jpg"
-    alt: a
-  - name: Todo mundo é bem vindo aqui
-    price: R$ 84,90
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/camisa 1.jpg"
-    alt: a 
-  - name: Acabe com o capacitismo, agora!
-    price: R$ 8,50
-    link: loja
-    picture: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/produtos/bottons.jpg"
+  - titulo: 'Acessibilidade, diversidade e inclusão na tecnologia'
+    tipo: Caneca 
+    valor: '21,00'
+    condicao: 'Até 3x R$ 18,33 sem juros'
+    link: 'https://umapenca.com/focoacessivel/caneca/acessibilidade-diversidade-e-inclusao-na-tecnologia-67041.html'
+    foto: 'https://umapenca.imgix.net/67041/ca395629-78f9-4a0f-a2de-00cb3613fdf3.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
     alt: a
