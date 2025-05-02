@@ -188,12 +188,11 @@ blockquote footer::before {
 .btn-youtube {
   height: 54px;
   border-radius: var(--border-radius);
-
 }
 
 .btn-spotify,
 .btn-youtube {
-  color: #fff
+  color: #fff;
 }
 
 .btn-youtube {
@@ -201,7 +200,7 @@ blockquote footer::before {
 }
 
 .btn-spotify {
-  background: #459F41;
+  background: #459f41;
 }
 
 .btn-spotify:hover,
@@ -209,10 +208,11 @@ blockquote footer::before {
 .btn-youtube:hover,
 .btn-youtube:focus {
   background: #000;
-  color: #fff !important
+  color: #fff !important;
 }
 
-.btn-outros {}
+.btn-outros {
+}
 
 .breadcrumb {
   font-size: small;
@@ -319,7 +319,7 @@ section {
 }
 
 .episode,
-.episode>div,
+.episode > div,
 .episode figure img {
   height: 100%;
 }
@@ -368,6 +368,7 @@ section {
 .program-guest-picture,
 .shop-item-picture {
   aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 /* Stats */
@@ -597,7 +598,8 @@ footer {
 }
 
 .sponsors-feature-logo {
-  max-width: 50%;
+  height: 150px;
+  width: auto;
   padding: 2rem 0;
 }
 
@@ -690,7 +692,6 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-
   .page-title,
   .section-title,
   .banner {
@@ -863,20 +864,62 @@ article h6 {
   margin-top: 0;
 }
 
-
-
-#page-links h1 {font-size: 1.25rem;margin: 1rem 0 0.5rem;}
-#page-links .banner-link {height: 10rem;background: #005757 url('/img/banner-link.png') right center no-repeat;background-size: contain;}
-#page-links .banner-link a {z-index: 2;}
-#page-links .banner-link:before {content: "";height: 100%;width: 100%;background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));position: absolute;bottom: 0px;left: 0px;z-index: 1;border-radius: 1.3rem;}
-#page-links .banner-list-button {padding: 0.85rem 1rem;margin: 1rem 0;display: block;color: #000;}
-#page-links .banner-list-button i {font-size: 1.5rem;}
-#page-links a.social-icon-instagram {color: var(--social-icon-color-instagram) !important}
-#page-links a.social-icon-threads {color: var(--social-icon-color-threads) !important}
-#page-links a.social-icon-tiktok {color: var(--social-icon-color-tiktok)}
-#page-links a.social-icon-facebook {color: var(--social-icon-color-facebook)}
-#page-links a.social-icon-linkedin {color: var(--social-icon-color-linkedin)}
-#page-links a.social-icontwitter {color: var(--social-icon-color-twitter)}
-#page-links a.social-icon-pinterest {color: var(--social-icon-color-pinterest)}
-#page-links .socials a {font-size: 1.5rem;}
-#page-links .entry__label::after {float: right;}
+#page-links h1 {
+  font-size: 1.25rem;
+  margin: 1rem 0 0.5rem;
+}
+#page-links .banner-link {
+  height: 10rem;
+  background: #005757 url("/img/banner-link.png") right center no-repeat;
+  background-size: contain;
+}
+#page-links .banner-link a {
+  z-index: 2;
+}
+#page-links .banner-link:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  border-radius: 1.3rem;
+}
+#page-links .banner-list-button {
+  padding: 0.85rem 1rem;
+  margin: 1rem 0;
+  display: block;
+  color: #000;
+}
+#page-links .banner-list-button i {
+  font-size: 1.5rem;
+}
+#page-links a.social-icon-instagram {
+  color: var(--social-icon-color-instagram) !important;
+}
+#page-links a.social-icon-threads {
+  color: var(--social-icon-color-threads) !important;
+}
+#page-links a.social-icon-tiktok {
+  color: var(--social-icon-color-tiktok);
+}
+#page-links a.social-icon-facebook {
+  color: var(--social-icon-color-facebook);
+}
+#page-links a.social-icon-linkedin {
+  color: var(--social-icon-color-linkedin);
+}
+#page-links a.social-icontwitter {
+  color: var(--social-icon-color-twitter);
+}
+#page-links a.social-icon-pinterest {
+  color: var(--social-icon-color-pinterest);
+}
+#page-links .socials a {
+  font-size: 1.5rem;
+}
+#page-links .entry__label::after {
+  float: right;
+}

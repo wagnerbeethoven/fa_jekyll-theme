@@ -6,7 +6,7 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 
 <section id="banner">
   {% include slogan.html %} 
-
+  
   
   {% assign sorted_posts = site.categories.Episodios | sort: 'date' | reverse %}
   {% for post in sorted_posts limit:1 %}
@@ -17,12 +17,12 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
     <div class="row">
       <div class="col-lg-4 col-12 pl-0">
         <figure class="ratio-1x1 ratio m-0 pb-0">
-        <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2"  aria-describedby="descricao-detalhada-{{post.guest | slugify}}" alt="{{post.guest}}">
-
-        <span id="descricao-detalhada-{{post.guest | slugify}}" class="visually-hidden">{{post.alt}}</span>
-
-      </figure>
-    </div>
+          <img src="{{post.image}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded-2"  aria-describedby="descricao-detalhada-{{post.guest | slugify}}" alt="{{post.guest}}">
+          
+          <span id="descricao-detalhada-{{post.guest | slugify}}" class="visually-hidden">{{post.alt}}</span>
+          
+        </figure>
+      </div>
       <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
         <div class="mb-4">
           <h3 class="h2 program-title">
@@ -42,6 +42,9 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
   
   {% include subscribe.html %}
 </section>
+{% include notinclude/loja.html %} 
+{% include notinclude/estatisticas.html %} 
+{% include notinclude/patrocinadores.html %} 
 
 <section class="programs" id="programs">
   <h2 class="section-title">Episódios recentes</h2>
