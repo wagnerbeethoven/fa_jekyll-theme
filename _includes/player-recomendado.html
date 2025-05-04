@@ -1,0 +1,38 @@
+{% assign ep_num = page.numero | plus: 0 %}
+{% assign episodio = site.data.episodios | where: "numero", ep_num | first %}
+
+{% if episodio %}
+
+<h2 class="episode-related">Ouça o episódio completo <i class="ms-2 fa-solid fa-arrow-down"></i></h2>
+
+<div class="episode rounded">
+  <div class="row">
+    <figure class="col-lg-4 col-12 pl-0 m-0 pb-0">
+      <a href="{{episodio.acesso}}" class="ratio ratio-1x1" title="Acesse o episódio">
+        <img src="{{episodio.imagem}}" class="program-gust-picture ratio ratio-1x1 object-fit-cover border rounded"
+          alt="{{episodio.alt}}">
+      </a>
+    </figure>
+    <div class="program-content d-flex justify-content-between flex-column col-lg-8 col-12 col-md p-3">
+      <div class="program-header">
+        <div class=" d-flex justify-content-between">
+          <h3 class="h3 program-number text-uppercase">
+            <span class="episodiosItem">
+              EPISÓDIO</span> #{{episodio.numero}}
+          </h3>
+          <span class="program-duration">{{episodio.duracao}}</span>
+        </div>
+        <h4 class="h2 program-title-ep">
+          <a href="{{ site.baseurl }}/episodios/{{episodio.acesso}}" title-ep="Acesse o episódio">{{episodio.titulo}}</a>
+        </h4>
+        <div class="program-footer mt-2 mb-3">
+          <span> {{episodio.convidado}} &bull; {{episodio.cargo}}</span>
+
+        </div>
+        {{episodio.resumo}}
+
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}

@@ -1,0 +1,126 @@
+- numero: 8
+  # info
+  titulo: "Entre normas e pessoas: o caminho da acessibilidade digital com propósito"
+  resumo: "Neste episódio do Foco Acessível, Bruno Welber compartilha sua experiência com as diretrizes WCAG e os desafios de aplicar acessibilidade digital de forma prática e humana. Um papo essencial para quem trabalha com tecnologia inclusiva."
+  duracao: "01:28:04"
+  # convidado
+  convidado: "Bruno Welber"
+  cargo: "Arquiteto Líder de Acessibilidade"
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/ep/08-bruno-welber.jpg"
+  alt: "Homem de pele clara, com cabelos escuros penteados para trás, vestindo camisa social branca e paletó preto. Ele sorri levemente e ao fundo, uma parede lisa e cinza."
+  bio: "<p>Especialista em acessibilidade digital, inclusão e diversidade, com 12 anos de atuação estratégica e multidisciplinar na área de tecnologia da informação. Com experiência consistente em desenvolvimento e design inclusivo, dedica-se integralmente à acessibilidade digital, impacto ESG e liderança técnica e humana.</p><p>Acredita que acessibilidade, inclusão e diversidade caminham juntas e são essenciais para promover transformação social e corporativa. Comprometido com a inovação, busca engajar equipes.</p>"
+  # links
+  acesso: "ep-8-entre-normas-e-pessoas-o-caminho-da-acessibilidade-digital-com-proposito-bruno-welber.html"
+  spotify: "78enqh3oZUZy0yVxR6efwc"
+  youtube: "FAo_lxkJks8"
+
+- numero: 7
+  # info
+  resumo: "Neste episódio, conversamos sobre como a acessibilidade digital pode ser integrada desde o início dos projetos, explorando práticas inovadoras, desafios e oportunidades, além de abordarmos  a aplicação das diretrizes WCAG, o uso de inteligência artificial para melhorar processos, e a importância de envolver pessoas com deficiência no design."
+  titulo: "Acessibilidade Sem Fronteiras: Inovação e Inclusão no Design Digital"
+  duracao: "38:19"
+  # convidado
+  convidado: Marcelo Paiva
+  cargo: Criador do WCAG Plugin para Figma
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/refs/heads/main/ep/07-marcelo-paiva.webp"
+  alt: "Homem careca, sorrir, de pele clara, vestindo uma camiseta preta. Ele está posicionado ao ar livre, cercado por plantas tropicais."
+  bio: "<p>Marcelo Paiva é uma referência em Experiência do Usuário (UX) e Acessibilidade Digital, com uma carreira de 30 anos nos Estados Unidos, criando experiências inclusivas para empresas da Fortune 500 e o Departamento de Educação dos EUA. Ele é reconhecido por integrar a acessibilidade desde o início dos projetos, desenvolvendo inovações como uma ferramenta para criação de protótipos acessíveis e o plugin WCAG para Figma. Marcelo é um palestrante internacional e defensor de que a acessibilidade não é um opcional, mas um direito essencial, inspirando profissionais ao redor do mundo a priorizarem a inclusão no design digital.</p>"
+  # links
+  acesso: "ep-7-acessibilidade-sem-fronteiras-inovacao-e-inclusao-no-design-digital-marcelo-paiva.html"
+  spotify: "4GOuHH3ZkPsjGp9eCnGeFu"
+  youtube: "gGtJZj_L5Qw"
+
+- numero: 6
+  # info
+  duracao: "49:31"
+  resumo: "O impacto do design inclusivo e como ele transforma a acessibilidade digital e física e os sobre desafios, inovações e a importância de considerar todas as pessoas na criação de produtos e experiências."
+  titulo: "Inclusão Digital: além das barreiras, construindo novas pontes"
+  # convidado
+  convidado: Janaína Bernardino
+  cargo: Especialista em Design Inclusivo
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/06-janaina-bernardino.jpg"
+  alt: "Mulher sorrindo, vestie blusa vermelha com mangas curtas. Tem pele clara, cabelos escuros e ondulados, que caem logo abaixo dos ombros, a iluminação suave e natural. Ao fundo, há uma parede cinza clara com um quadro emoldurado pendurado, e parte de uma planta verde pode ser vista no canto esquerdo da imagem."
+  bio: "<p>Janaina especialista em design inclusivo no Grupo Boticário, professora de acessibilidade no MBA na FIAP no curso de design estratégico. Em 2023 foi jurada nos prêmios Brasileiro de Design e Design for a Better World e eleita profissional do ano de acessibilidade no Link 2023. É integrante do Comitê da ABNT de acessibilidade digital, criadora do indicador de design inclusivo, é palestrante, mãe do Miguel e esposa do Flávio. Além de ser premiada pelo IF Design Awards (representando o Itaú na Alemanha, em 2018). Atualmente ensina e compartilha sua vivência e os caminhos para uma sociedade acessível e inclusiva.</p>"
+  # links
+  acesso: "ep-6-inclusao-digital-alem-das-barreiras-construindo-novas-pontes-janaina-bernardino.html"
+  spotify: "5vmqpChFiLYtOqeVlh7hat"
+  youtube: "XTv93IxW1hY"
+
+- numero: 5
+  titulo: "Acessibilidade digital no Brasil: desafios e iniciativas inovadoras"
+  duracao: "01:01:20"
+  resumo: "Exploramos os desafios e iniciativas inovadoras que estão transformando o cenário brasileira, desde a importância da legislação até a aplicação de novas tecnologias para tornar a web mais inclusiva para todos."
+  # convidado
+  convidado: Reinaldo Ferraz
+  cargo: Gerente de Projetos e Especialista em Desenvolvimento Web
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/05-reinaldo-ferraz.jpg"
+  alt: "Reinaldo é um homem de pele branca, cabelos castanhos e barba grisalha e curta, vestido uma camisa com a cor escura e um crachá de identificação com um cordão listrado em vermelho e branco. Segura um troféu e fala ao microfone. O troféu que ele segura é translúcido e tem um círculo, dentro do círculo existe uma representação de uma pessoa os as pernas e os braços abertos."
+  bio: "<p>Reinaldo Ferraz é Gerente de Projetos e Especialista em Desenvolvimento Web, com mais de 20 anos de experiência em tecnologia da informação. Ele é um defensor da acessibilidade digital e tem trabalhado em diversas iniciativas para promover a inclusão digital no Brasil.</p><p>Reinaldo acredita que a acessibilidade digital é um direito fundamental e que todos devem ter acesso às informações e serviços disponíveis na internet.</p>"
+  # links
+  acesso: "ep-5-acessibilidade-digital-no-brasil-desafios-e-iniciativas-inovadoras-reinaldo-ferraz.html"
+  spotify: ""
+  youtube: ""
+
+- numero: 4
+  #info
+  titulo: Conexões acessíveis para tecer inclusão no mundo digital
+  duracao: "01:09:09"
+  resumo: "Conversamos sobre os desafios e soluções em projetos open source, o impacto que a tecnologia tem na vida das pessoas ocm deficiência, além de discutir a importância de uma internet feita de pessoas para as pessoas."
+  # convidado
+  convidado: Bruno Pulis
+  cargo: Front-end e Consultor
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/04-bruno-pulis.png"
+  alt: Bruno é um homem de pele clara, cabelos curtos e barba escura, usando óculos de armação preta e uma camiseta branca, olhando diretamente para a câmera com uma expressão neutra. O fundo é claro e uniforme.
+  bio: "<p>Bruno Pulis é desenvolvedor de software especialista em acessibilidade web, formado pela Faculdade Pitágoras, com 15 anos de experiência. Apaixonado por acessibilidade, criou o Awesome A11y, também é co-fundador do Minas Dev.</p><p>Curioso. Viciado em Star Wars e café. Acredita que a web é um local democrático e diverso onde todos podem usufruir dos seus benefícios e troca de conhecimentos.</p>"
+  #link
+  acesso: "ep-4-conexoes-acessiveis-tecer-inclusao-mundo-digital-bruno-pulis.html"
+  spotify: "2eIs0dO3j4o3FxZ6Vcb4b1"
+  youtube: "oNDW7QPHpGE"
+
+- numero: 3
+  # info
+  titulo: Design é Acessibilidade e Acessibilidade é Design?
+  duracao: "01:41:21"
+  resumo: "Neste episódio iremos conversar como tornar o design um ponto estratégico, além de explorar os benefícios para as pessoas e como a acessibilidade pode auxiliar no processo de inovação digital"
+  # convidado
+  convidado: Marcelo Sales
+  cargo: Consultor e Designer
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/03-marcelo-sales.jpg"
+  alt: Foto de homem branco de cabelo curto e castanho. Ele está usando óculos e vestindo camiseta preta escrito Minimalism.
+  bio: "<p> Marcelo Sales é designer especialista em acessibilidade digital e design inclusivo com ênfase na aplicação estratégica, planejamento, gestão de mudança, aplicação prática, <span lang='en'>compliance</span> e testes, há 20 anos desenvolvendo produtos e serviços digitais. CEO e fundador da Tudo é Acessibilidade.</p><p>Criador do Guia WCAG e do curso AccessBoost.</p><p>Professor de Acessibilidade na PUC, FIAP, ESPM e outras instituições. Palestrante e membro do Grupo de Trabalho de Especialistas em Acessibilidade do W3C Brasil.</p>"
+  # links
+  acesso: 'ep-3-design-e-acessibilidade-acessibilidade-e-design-marcelo-sales.html'
+  spotify: "1kw1ezfJIMiiVGFdoSWFDV"
+  youtube: "JobxxD-0Zi4"
+
+- numero: 2
+  # info
+  titulo: Audiodescrição e tecnologia a favor da acessibilidade e da inclusão
+  duracao: "01:53:49"
+  resumo: "No segundo episódio, falamos da sobre como é a vida de uma pessoa com deficiência e como ela pode ser favorecida com a tecnologia e com a inteligencia artificial, além de diversas iniciativas de cunho acadêmico e tecnológico."
+  # convidado
+  convidado: Francisco Lima
+  cargo: Cientista e Professor
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/02-francisco-lima.jpg"
+  alt: À direita da fotografia, em pé, o Professor Francisco segura com a mão direita um bloquinho de resina, dentro do qual está preservado um besouro. À esquerda, parcialmente oculto pelo corpo do professor, há um banner apresentando a fotografia colorida da abelha europeia, Apis mellifera. Acima do bolso esquerdo da camisa do professor, há um bottom do SnapSects.
+  bio: "<p>Francisco é humanista, tradutor e intérprete, formado em Psicologia, PhD. em psicofísica sensorial com trabalho desenvolvido no museu de história natural dos EUA, consultor pelo <span lang='en'>Audio Description Project</span>, professor adjunto do curso de Pedagogia e em licenciaturas diversas da Universidade Federal de Pernambuco e a pesquisador no sistema tátil.</p><p>A frente de iniciativas como o curso de audiodescrição 'Imagens Que Falam', da publicação acadêmica 'Revista Brasileira de Tradução Visual' e do  '<abbr title='Laboratory of Artificial Intelligence and Machine Aid' lang='en'>Laima</abbr>', laboratório de desenvolvimento de tecnologias acessíveis.</p>"
+  # links
+  acesso: 'ep-2-audiodescricao-tecnologia-a-favor-da-acessibilidade-e-da-inclusao-francisco-lima.html'
+  spotify: "51XqR6AUvWqQaTtvh9OjTV"
+  youtube: "d3gjgcrwdfA"
+
+- numero: 1
+  # info
+  titulo: Design, acessibilidade e conscientização da inclusão
+  duracao: "26:30"
+  resumo: "Neste episódio, falamos da produção acadêmica em design, projeto para inclusão de back-end exclusivo para PCDs e recomendações para adesão de um cenário mais inclusivo dentro das empresas."
+  # convidado
+  convidado: Fernando Fernandes
+  cargo: UX Research
+  imagem: "https://raw.githubusercontent.com/focoacessivel/pictures/main/ep/01-fernando-fernandes.jpg"
+  alt: À frente, um homem branco de cabelos e olhos pretos, com barba e camisa estampada. Ao fundo, uma parede branca
+  bio: "<p>Há mais de 10 anos atuando como designer em produtos e serviços com foco em pesquisa, UX, jogos, acessibilidade, inclusão e diversidade, além de ampla experiência exercendo funções de liderança em projetos e times.</p><p>Mestre em Design, Ergonomia e Tecnologia pela UFPE. Possui foco em pesquisa, acessibilidade e estratégia. Direciona, também, seus estudos ao desenvolvimento de jogos para pessoas com deficiências.</p>"
+  # links
+  acesso: 'ep-1-design-acessibilidade-e-conscientizacao-da-inclusao-fernando-fernandes.html'
+  spotify: "0qCamKdqulOSVuqqJYxnAC"
+  youtube: "DZyhhf6E1I8"
