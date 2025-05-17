@@ -60,18 +60,23 @@ title: Um podcast sobre acessibilidade, diversidade e inclusão na tecnologia
 
 <section class="shop" id="shop">
   <h2 class="section-title mb-0">Confira nossa <a href="{{ site.baseurl }}/loja.html">loja</a></h2>
-  <p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnologia — com propósito</p><p><em>Ao comprar, você apoia o podcast Foco Acessível e ajuda a ampliar vozes que lutam por uma tecnologia mais justa para todas as pessoas.</em></p><p><small>Ao clicar nos links abaixo, você será redirecionado para o site: <a class="fw-bold" href="http://umapenca.com/focoacessivel">http://umapenca.com/focoacessivel</a> do respectivo produto.
-    <br> Em caso de dúvidas, acesse as <a href="{{ site.baseurl }}/loja.html#faq">perguntas frequentes</a> em caso de dúvidas.</small></p>
-  <ul class="row">
-    {% assign qtd_itens = 4 %}
-    {% assign itens_random = site.data.loja.itens | sample: qtd_itens %}
-    {% for item in itens_random %}
-    {% include produtos-loop.html %}
+  <p class="lead mb-0">Acessibilidade, diversidade e inclusão na tecnologia — com propósito</p>
+  <p><em>Ao comprar, você apoia o podcast Foco Acessível e ajuda a ampliar vozes que lutam por uma tecnologia mais justa
+      para todas as pessoas.</em></p>
+  <p><small>Ao clicar nos links abaixo, você será redirecionado para o site: <a class="fw-bold"
+        href="http://umapenca.com/focoacessivel">http://umapenca.com/focoacessivel</a> do respectivo produto. Em caso de
+      dúvidas, acesse as <a href="{{ site.baseurl }}/loja.html#faq">perguntas frequentes</a> em caso de dúvidas. Os
+      produtos exibidos são são carregados aleatoreamente, clique no link da nossa loja para ter acesso a todos os
+      produtos.</small> </p>
+  {% assign limite = 4 %}
+  {% assign itens_embaralhados = site.data.loja.itens | sample: limite %}
+
+  <ul class="row list-unstyled">
+    {% for item in itens_embaralhados %}
+    {% include produtos-loop.html item=item %}
     {% endfor %}
   </ul>
 </section>
-
-
 
 
 

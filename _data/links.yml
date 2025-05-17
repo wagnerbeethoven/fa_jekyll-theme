@@ -27,6 +27,10 @@ menu:
     link: "contato.html"
     description: "Fale conosco"
     keys: 6
+  - name: "Loja"
+    link: "loja.html"
+    description: "Ajude o Podcast"
+    keys: 7
 
 # ITEMS TOP MENU
 streaming:

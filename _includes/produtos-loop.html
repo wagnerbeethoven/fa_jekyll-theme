@@ -1,17 +1,19 @@
 
-<li class="h-100 col-12 col-md-3 shop-item">
+<li class="h-100 col-12 col-md-4 col-lg-3 shop-item">
   <div class="position-relative">
     <figure class="ratio ratio-1x1">
-      <img class="rounded img-fit-cover border img-fluid shop-item-picture" src="{{ item.foto }}" alt="{{ item.alt }}">
+      <img style="background-position: top center;" class="rounded img-fit-cover border img-fluid shop-item-picture" src="{{include.item.foto }}" alt="Reseprentação d{{include.item.artigo}} {{include.item.tipo }}: '{{include.item.titulo }}'">
     </figure>
-    <small class="d-block">{{ item.tipo }}</small>
-    <h3 class="shop-item-title fs-6 m-0 p-0">{{ item.titulo }}</h3>
+    <small class="d-block">{{include.item.tipo }}</small>
+    <h3 class="shop-item-title fs-6 m-0 p-0">{{include.item.titulo }}</h3>
     <p>
-      <span class="d-blockshop-item-price">{{ item.valor }}</span>
-      <span class="d-block mb-3 shop-item-price">{{ item.condicao }}</span>
+      <span class="d-blockshop-item-price">{{include.item.valor }}</span>
+      <span class="d-block mb-3 shop-item-price">{{include.item.condicao }}</span>
     </p>
-    <a class="button stretched-link shop-item-link" href="{{ item.link }}">
-      <i class="fa-solid fa-cart-shopping"></i><span class="ms-2">Compre o item</span>
+    <a class="button stretched-link shop-item-link" href="{{include.item.link }}">
+      <i class="fa-solid fa-cart-shopping"></i><span class="ms-2">Compre <span class="text-lowercase">{{include.item.artigo}} {{include.item.tipo }}</span></span>
     </a>
   </div>
 </li>
+
+
