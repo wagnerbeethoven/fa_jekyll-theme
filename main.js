@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const href = link.getAttribute("href");
     if (href && href.startsWith("http") && !href.startsWith(baseUrl)) {
       link.setAttribute("rel", "external no-referrer noopener");
-      link.setAttribute("target", "_blank");
+      // link.setAttribute("target", "_blank");
       link.setAttribute("title", "O link irá abrir em uma nova aba");
       link.setAttribute("rel", "dns-prefetch");
     }

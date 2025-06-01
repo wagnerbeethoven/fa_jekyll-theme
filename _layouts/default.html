@@ -16,8 +16,8 @@ layout: compress
   <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 
   <!--  GOOGLE FONTS-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" target="_blank" href="http://fonts.googleapis.com">
+  <link rel="preconnect" target="_blank" href="http://fonts.gstatic.com" crossorigin>
 
   <!--  PINTEREST -->
   <meta name="p:domain_verify" content="f0a4b51290c8d79df0b5e93c43388693" />
@@ -27,18 +27,18 @@ layout: compress
   <link rel="apple-touch-icon" href="{{ site.baseurl }}/ifavicon.ico">
 
   <!--  CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
+    <link rel="stylesheet" target="_blank" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" target="_blank" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" target="_blank" href="http://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" target="_blank" href="http://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&&display=swap">
   <link rel="stylesheet" href="{{ site.baseurl }}/main.css">
   <!-- <link rel="stylesheet" href="{{ site.baseurl }}/diagnostic.css"> -->
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.baseurl }}">
   
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.baseurl }}">
-  <link rel="alternate" href="https://anchor.fm/s/e14f7d9c/podcast/rss" type="application/rss+xml" title="Youtube">
-  <link rel="alternate" href="https://www.youtube.com/feeds/videos.xml?channel_id=UCYa1lmVi_lcn_DgT4cf-jRQ" type="application/rss+xml" title="Spotify">
+  <link rel="alternate" target="_blank" href="http://anchor.fm/s/e14f7d9c/podcast/rss" type="application/rss+xml" title="Youtube">
+  <link rel="alternate" target="_blank" href="http://www.youtube.com/feeds/videos.xml?channel_id=UCYa1lmVi_lcn_DgT4cf-jRQ" type="application/rss+xml" title="Spotify">
 
   <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ '/sitemap.xml' | prepend: site.baseurl | prepend: site.baseurl }}" />
   <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
@@ -122,7 +122,7 @@ layout: compress
             </li>
             {% endfor %}
             <li class="nav-item mb-2">
-              <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{ site.baseurl }}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" href="https://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
+              <span class="p-0" >RSS: <a class="nav-link p-0 d-inline-block" href="{{ site.baseurl }}/feed.xml" title="Este RSS irá contemplar tudo que for publicado no site">Site</a> e <a class="nav-link p-0 d-inline-block" target="_blank" href="http://anchor.fm/s/e14f7d9c/podcast/rss" title="Este RSS irá contemplar apenas os episódios">Episódios</a>
             </span>
             </li>
           </ul>
@@ -151,11 +151,11 @@ layout: compress
     <div
       class="d-flex flex-column flex-md-row justify-content-between pt-4 mt-4 w-100 border-top text-center text-md-start">
       <div class="col-12 mb-0  col-md-8 credits">
-        <p class="mb-3 mb-md-0">{{site.title}} feito no <a href="http://jekyllrb.com"  
+        <p class="mb-3 mb-md-0">{{site.title}} feito no <a target="_blank" href="http://jekyllrb.com"  
           title="Site do Jekyll - nova aba">Jekyll</a> com <span>❤️</span> e <span>☕</span>
         em Olinda, PE &mdash;
         <a href="{{ site.baseurl }}/arquivo.html" title="Acesse todas as publicações do site">Todas as publicações do site</a>.</p>
-        <p>Este site é membro do <a  href="https://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  href="https://a11y-webring.club/prev">site anterior</a>, <a  href="https://a11y-webring.club/next">próximo site</a>, ou um <a  href="https://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
+        <p>Este site é membro do <a  target="_blank" href="http://a11y-webring.club/"><strong>a11y-webring.club</strong></a>. Acesse o <a  target="_blank" href="http://a11y-webring.club/prev">site anterior</a>, <a  target="_blank" href="http://a11y-webring.club/next">próximo site</a>, ou um <a  target="_blank" href="http://a11y-webring.club/random">site aleatório</a> do <span lang="en">webring</span>.</p>
       </div>
       <ul class="col-12 col-md-2 socials mt-5 mt-md-0 mb-0 d-flex justify-content-between">
         {% include social.html %}
