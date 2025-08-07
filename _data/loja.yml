@@ -1,69 +1,112 @@
 itens:
-# bottons
+# Bottons
   - titulo: 'Eu sou uma pessoa defensora da acessibilidade'
     tipo: Kit de Bottons
-    valor: 'R$ 21,00'
-    condicao: 'Até 3x R$ 7,00 sem juros'
     link: 'https://umapenca.com/focoacessivel/bottons/eu-sou-uma-pessoa-defensora-da-acessibilidade-243466.html'
-    foto: 'https://umapenca.imgix.net/243466/6638e96a-782f-42d9-be2c-2ef297acd148.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
+    foto: 'https://umapenca.imgix.net/243466/96cc2076-628e-4150-a9b7-1bc48e3d5c56.jpg'
     artigo: o
- 
-# camisetas
+
+  - titulo: 'Acabem com o Capacitismo, Agora!'
+    tipo: Kit de Bottons
+    link: 'https://umapenca.com/focoacessivel/bottons/acabem-com-o-capacitismo-agora-269409.htmll'
+    foto: 'https://umapenca.imgix.net/269409/6ae566a7-9c14-4f58-be87-59df1889293c.jpg'
+    artigo: o
+
+# Imãs
+  - titulo: 'Acabe com o capacitismo'
+    tipo: Kit de Imãs 
+    link: 'https://umapenca.com/focoacessivel/ima/acabe-com-o-capacitismo-243471.html'
+    foto: 'https://umapenca.imgix.net/243471/f8ebc0f5-6ab6-4af0-b536-8e238897f0a2.jpg'
+    artigo: o
+
+# Pôster
+  - titulo: 'Todo mundo é bem-vindo aqui 💜'
+    tipo: Pôster 
+    link: 'https://umapenca.com/focoacessivel/poster/todo-mundo-e-bem-vindo-aqui-244822.html'
+    foto: 'https://umapenca.imgix.net/244822/5f5c58ea-173d-438b-bcd1-c655721b712b.jpg'
+    artigo: o
+
+  - titulo: 'Diversidade Importa!'
+    tipo: Pôster 
+    link: 'https://umapenca.com/focoacessivel/poster/diversidade-importa-269294.html'
+    foto: 'https://umapenca.imgix.net/269294/63ede4bc-54e5-4dea-8ed7-f3a7b6851bc0.jpg'
+    artigo: o
+
+# Camisetas
   - titulo: 'Capacitismo'
     tipo: Camiseta 
-    valor: 'R$ 70,00'
-    condicao: 'Até 3x R$ 23,33 sem juros'
     link: 'https://umapenca.com/focoacessivel/camiseta/capacitismo-67074.html'
-    foto: 'https://umapenca.imgix.net/67074/13ff390d-7f25-4484-8ee9-140fb928f2fa.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
+    foto: 'https://umapenca.imgix.net/67074/13ff390d-7f25-4484-8ee9-140fb928f2fa.jpg'
     artigo: a
   
   - titulo: 'Fé, Paz, Amor e União'
     tipo: Camiseta 
-    valor: 'R$ 70,00'
-    condicao: 'Até 3x R$ 23,33 sem juros'
     link: 'https://umapenca.com/focoacessivel/camiseta/fe-paz-amor-e-uniao-244820.html'
-    foto: 'https://umapenca.imgix.net/244820/7081156d-906c-4ae0-8e13-8e2fef0e5a56.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
+    foto: 'https://umapenca.imgix.net/244820/7081156d-906c-4ae0-8e13-8e2fef0e5a56.jpg'
     artigo: a
- 
-  # imãs
-  - titulo: 'Acabe com o capacitismo'
-    tipo: Kit de Imãs 
-    valor: 'R$ 21,00'
-    condicao: 'Até 3x R$ 7,00 sem juros'
-    link: 'https://umapenca.com/focoacessivel/ima/acabe-com-o-capacitismo-243471.html'
-    foto: 'https://umapenca.imgix.net/243471/f8ebc0f5-6ab6-4af0-b536-8e238897f0a2.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
-    artigo: o
   
-   # poster
-  - titulo: 'Todo mundo é bem-vindo aqui 💜'
-    tipo: Pôster 
-    valor: 'A partir de R$ 37,10'
-    condicao: 'Até 3x R$ 21,03 sem juros'
-    link: 'https://umapenca.com/focoacessivel/poster/todo-mundo-e-bem-vindo-aqui-244822.html'
-    foto: 'https://umapenca.imgix.net/244822/5f5c58ea-173d-438b-bcd1-c655721b712b.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
-    artigo: o
+  - titulo: 'Quanto menos nós vemos com nossos olhos, mais nós vemos com os nossos corações'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/quanto-menos-nos-vemos-com-nossos-olhos-mais-nos-vemos-com-os-nossos-coracoes-269413.html'
+    foto: 'https://umapenca.imgix.net/269413/73fbf6b9-3f78-45f4-b701-55460dc47911.jpg'
+    artigo: a
+  
+  - titulo: 'A11Y!'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/a11y-269259.html'
+    foto: 'https://umapenca.imgix.net/269259/c947bc47-891a-4404-b238-8b7f5fd427a0.jpg'
+    artigo: a 
 
-  
-  # canecas
+  - titulo: 'Nada sobre nós sem nós'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/nada-sobre-nos-sem-nos-269289.html'
+    foto: 'https://umapenca.imgix.net/269289/240b6c3a-35c2-43fa-a346-902990161353.jpg'
+    artigo: a
+
+  - titulo: 'O Futuro é Acessível'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/o-futuro-e-acessivel-269341.html'
+    foto: 'https://umapenca.imgix.net/269341/cc2e408a-a5ff-4924-9388-5b185a0ba0ac.jpg'
+    artigo: a
+
+  - titulo: 'Diversidade, Inclusão e Acessibilidade'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/diversidade-inclusao-acessibilidade-269400.html'
+    foto: 'https://umapenca.imgix.net/269400/2de345f3-b1c7-4b48-953a-412215f7b71e.jpg'
+    artigo: a
+
+  - titulo: 'Empatia, Respeito, Usabilidade, Diversidade e Acessibilidade'
+    tipo: Camiseta 
+    link: 'https://umapenca.com/focoacessivel/camiseta/empatia-respeito-usabilidade-diversidade-acessibilidade-269399.html'
+    foto: 'https://umapenca.imgix.net/269399/3a55dc4a-64c9-481b-904c-5c7af1e57ef8.jpg'
+    artigo: a
+# Canecas
   - titulo: 'Acessibilidade, diversidade e inclusão na tecnologia'
     tipo: Caneca 
-    valor: 'R$ 55,00'
-    condicao: 'Até 3x R$ 18,33 sem juros'
     link: 'https://umapenca.com/focoacessivel/caneca/acessibilidade-diversidade-e-inclusao-na-tecnologia-67041.html'
-    foto: 'https://umapenca.imgix.net/67041/ca395629-78f9-4a0f-a2de-00cb3613fdf3.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
+    foto: 'https://umapenca.imgix.net/67041/ca395629-78f9-4a0f-a2de-00cb3613fdf3.jpg'
+    artigo: a
+
+  - titulo: 'Se não é acessível, não é aceitável'
+    tipo: Caneca 
+    link: 'https://umapenca.com/focoacessivel/caneca/se-nao-e-acessivel-nao-e-aceitavel-269406.html'
+    foto: 'https://umapenca.imgix.net/269406/d5c5be9a-b9d6-441b-a580-30708ff24a74.jpg'
+    artigo: a
+
+  - titulo: 'Nem toda deficiência é visível'
+    tipo: Caneca 
+    link: 'https://umapenca.com/focoacessivel/caneca/nem-toda-deficiencia-e-visivel-269268.html'
+    foto: 'https://umapenca.imgix.net/269268/4257f565-fdad-45ec-bcf8-d658628c532a.jpg'
+    artigo: a
+
+  - titulo: 'Sério! Você não é o usuário'
+    tipo: Caneca 
+    link: 'https://umapenca.com/focoacessivel/caneca/serio-voce-nao-e-o-usuario-269291.html'
+    foto: 'https://umapenca.imgix.net/269291/5bba6a3a-7fcb-4854-ba8f-76e6f7e76dee.jpg'
     artigo: a
 
   - titulo: 'Diversidade Importa!'
     tipo: Caneca
-    valor: 'R$ 55,00'
-    condicao: 'Até 3x R$ 18,33 sem juros'
     link: 'https://umapenca.com/focoacessivel/caneca/diversidade-importa-67037.html'
-    foto: 'https://umapenca.imgix.net/67037/c7b7583c-c04e-4bef-b3dd-d39b20cf70c1.jpg?auto=compress,format&q=65&w=425&h=600&fit=crop&crop=top'
-    alt: a
+    foto: 'https://umapenca.imgix.net/67037/c7b7583c-c04e-4bef-b3dd-d39b20cf70c1.jpg'
     artigo: a
