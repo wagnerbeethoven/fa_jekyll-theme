@@ -4,32 +4,45 @@
     {% assign postHasSimilar = false %}
     {% for tag in post.tags %}
     {% for thisTag in page.tags %}
-    {% if postHasSimilar == false and hasSimilar.size < 3 and post !=page and tag==thisTag %} {% if hasSimilar.size==0
-        %} <h2>Gostou de ler este artigo?</h2>
-        <p>Separamos algums artigos que talvez seja interessante para você 😉</p>
-        <div class="card-group">
-            {% endif %}
-            <div class="card col-12 col-md-12 col-lg-4">
-                <img src="{{ post.image }}" style="height: 200px;" class="card-img-top object-fit-cover" alt="{{ post.banner-alt }}">
-                <div class="card-body d-flex justify-content-between flex-column">
-                    <div>
+    {% if postHasSimilar == false and hasSimilar.size < 3 and post != page and tag == thisTag %}
+        {% if hasSimilar.size == 0 %}
+            <h2>Gostou de ler este artigo?</h2>
+            <p>Separamos alguns artigos que talvez sejam interessantes para você 😉</p>
+        {% endif %}
+        <div class="card mb-3">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{{ post.image }}"
+                         class="object-fit-cover h-100 img-fluid rounded-start" alt="{{ post['banner-alt'] | default: post.title | escape }}">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
                         <h3 class="mt-0 mb-3 card-title fs-6">
                             <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                         </h3>
-                        <p class="card-text fs-6">{{post.excerpt}}</p>
+                        <p class="card-text fs-6"><small>{{ post.excerpt }}</small></p>
+                        <div class="d-flex justify-content-between">
+                            <a href="{{ site.baseurl }}{{ post.url }}" class="card-link">
+                                <small class="text-body-secondary">Continue lendo 
+                                    <i aria-hidden="true" class="fa-solid fa-arrow-right"></i>
+                                </small>
+                            </a>
+                            <time class="card-subtitle text-body-secondary" title="Data de publicação" datetime="{{ post.date | date: '%Y-%m-%d'}}">
+                                <small class="text-body-secondary">
+                                    <i aria-hidden="true" class="fa-regular fa-calendar"></i> {{ post.date | date: "%d/%m/%Y" }}
+                                </small>
+                            </time>
+                        </div>
                     </div>
-                    <p class="pt-4 card-text">
-                        <a href="{{ site.baseurl }}{{ post.url }}" title="Clique para ler o artigo '{{ post.title }}'"><small class="text-body-secondary">Leia o artigo →</small></a>
-                    </p>
                 </div>
             </div>
-            {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
-            {% assign postHasSimilar = true %}
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-            {% endfor %}
-            {% if hasSimilar.size > 0 %}
         </div>
-        {% endif %}
+        {% capture hasSimilar %}{{ hasSimilar }}*{% endcapture %}
+        {% assign postHasSimilar = true %}
+    {% endif %}
+    {% endfor %}
+    {% endfor %}
+    {% endfor %}
+    {% if hasSimilar.size > 0 %}
+    {% endif %}
 </aside>
