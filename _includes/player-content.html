@@ -1,23 +1,56 @@
-<div class="tab-content mt-5" id="playerContent">
-    <div class="tab-pane fade" id="spotify-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
-        <div class="ratio ratio-16x9">
-            <iframe style="border-radius:1rem"
-                src="https://open.spotify.com/embed/episode/{{page.spotify}}/video?utm_source=generator"
-                title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+<div class=" mt-5 accordion" id="players">
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseYoutube" aria-expanded="true" aria-controls="collapseYoutube">
+                Acompanhe o episódio no <span class="ms-2 fw-semibold">Youtube</span>.
+            </button>
+        </h2>
+        <div id="collapseYoutube" class="accordion-collapse collapse show" data-bs-parent="#players">
+            <div class="accordion-body">
+                <p class="lead fw-semilight">Assista o novo episódio do Foco Acessível no <a href="http://youtube.com/@focoacessivel">YouTube</a>!</p>
+                <p>Curta, comente e compartilhe para que mais pessoas conheçam a importância da acessibilidade e da inclusão. Se inscreva no canal para acompanhar os próximos episódios e participar da conversa!</p>
+                
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe style="border-radius:1rem" src="https://www.youtube.com/embed/{{page.youtube}}" title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <p><span class="fw-semibold">Episódio</span>: {{page.title}} </p>
+                <p><span class="fw-semibold">Convidado</span>: {{page.guest}} &mdash; {{page.role}}.</p>
+                <p>Continue acompanhando o Foco Acessível nas redes sociais: {% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}">{{item.name}}</a></span>{% endfor %}.</p>
+            </div>
         </div>
     </div>
-    <div class="tab-pane fade" id="youtube-tab-pane" role="tabpanel" aria-labelledby="youtube-tab" tabindex="0">
-        <div class="ratio ratio-16x9">
-            <iframe style="border-radius:1rem" src="https://www.youtube.com/embed/{{page.youtube}}"
-                title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="accordion-item">
+        <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpotify" aria-expanded="false" aria-controls="collapseSpotify">
+                Acompanhe o episódio no <span class="ms-2 fw-semibold">Spotify</span>.
+            </button>
+        </h2>
+        <div id="collapseSpotify" class="accordion-collapse collapse" data-bs-parent="#players">
+            <div class="accordion-body">
+
+                <p class="lead fw-semilight">Assista o novo episódio do Foco Acessível no <a href="https://open.spotify.com/show/4D6HigcXDCdNuCXxrkStWL">Spotify</a>!</p>
+                <p>Siga o podcast, avalie com 5 estrelas e compartilhe para que mais pessoas conheçam a importância da acessibilidade e da inclusão. Assim você também não perde os próximos episódios!</p>
+
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe style="border-radius:1rem" src="https://open.spotify.com/embed/episode/{{page.spotify}}/video?utm_source=generator" title="Episódio #{{page.number}}: {{page.title}} - {{page.guest}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+
+                <p><span class="fw-semibold">Episódio</span>: {{page.title}}</p>
+                <p><span class="fw-semibold">Convidado</span>: {{page.guest}} &mdash; {{page.role}}.</p>
+                <p>Continue acompanhando o Foco Acessível nas redes sociais: {% for item in site.data.links.network %}<span class="support-social social-{{item.name | slugify}}"><a href="{{item.link}}">{{item.name}}</a></span>{% endfor %}.</p>
+
+            </div>
         </div>
+
     </div>
-    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...
-    </div>
-    <div class="tab-pane fade" id="disabled-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">...
+    <style>
+        .accordion-button.accordion-outros::after { background-image:url('{{site.url}}/img/ellipsis-vertical-solid-full.svg'); }
+    </style>
+    <div class="accordion-item">
+
+        <a class="accordion-button collapsed text-decoration-none accordion-outros" href="#offcanvas" data-bs-toggle="offcanvas" role="button" aria-controls="offcanvas" title="Confira todas as plataformas">
+            Outras plataformas
+        </a>
     </div>
 </div>

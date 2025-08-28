@@ -18,26 +18,30 @@ layout: default
         </figure>
       </div>
       <div class="col-lg-8 col-12 col-md d-flex align-items-start flex-column">
-        <div class="mb-4">
-          <h1 class="h2 program-title">
-            {{page.title}}
-          </h1>
-          <h2 class="h4 mt-3 program-guest">
-            {{page.guest}} &bull; {{page.role}}
-          </h2>
-          </h2>
-          {{page.excerpt}}
-          <div class="my-3 w-100">{% include player.html %}</div>
+        <h1 class="h2 program-title">
+          {{page.title}}
+        </h1>
+        <h2 class="h4 mt-3 program-guest">
+          {{page.guest}} &bull; {{page.role}}
+        </h2>
+        </h2>
+        {{page.excerpt}}
+        <div class="my-3 w-100">{% include player.html %}</div>
+        <div class="d-flex">
           <a href="#content-detail" title="Clique para acessar informações sobre o episódio"><i
               class="fa-solid fa-arrow-down pe-2"></i>Detalhes</a>
+          <div class="mx-3"></div>
+          <a href="#players" title="Ouça o episódio em diversas plataformas."><i
+              class="fa-solid fa-headphones pe-2"></i>Ouça o programa</a>
+
+
         </div>
       </div>
     </div>
   </div>
 
   {% include player-content.html %}
-  {% include subscribe.html %}
-  <div class="article-content" id="content-detail">
+  <div class="article-content pt-5" id="content-detail">
     <ul class="nav article-tabs nav-fill" id="post-content" role="tablist">
       <li class="nav-item col-12 col-md-6 active" role="presentation" aria-current="page">
         <button class="w-100 active" data-bs-toggle="tab" type="button" role="tab" aria-selected="true" id="notes-tab"
@@ -49,8 +53,12 @@ layout: default
       </li>
     </ul>
     <div class="article-tabs-content tab-content">
-
+      <!-- ShareThis BEGIN -->
+      <div class="sharethis-inline-follow-buttons"></div><!-- ShareThis END -->
       {{ content }}
+      {% include subscribe.html %}
+
+
       {% include comments.html %}
     </div>
   </div>
