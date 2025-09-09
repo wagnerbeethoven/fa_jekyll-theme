@@ -11,7 +11,11 @@ title: Guia de estilo da marca
       <p class="list-group-item mb-0 text-secondary border-0">Editorial</p>
 
       <a href="#objetivo" class="list-group-item">Objetivo</a>
-      <a href="#missao" class="list-group-item">Missão</a>
+
+      <a href="#missao" class="mt-3 list-group-item">Missão</a>
+      <a href="#visao" class="list-group-item">Visão</a>
+      <a href="#valores" class="list-group-item">Valores</a>
+
       <a href="#naming" class="list-group-item" lang="en">Naming</a>
    
       <a href="#logotipo" class=" mt-3 mb-0 list-group-item">Logotipo</a>
@@ -44,10 +48,28 @@ title: Guia de estilo da marca
     <h3 id="objetivo" class="mt-0">Objetivo</h3>
 
     <p>O objetivo do podcast <strong>Foco Acessível</strong> é espalhar informações e promover o conhecimento sobre <strong>acessibilidade</strong>, <strong>inclusão</strong> e <strong>diversidade</strong>, alcançando o maior número de pessoas possível. Queremos sensibilizar a sociedade e contribuir para mudanças positivas e duradouras.</p>
-   
-    <h3 id="missao" class="mt-5">Missão</h3>
-
-    <p>Criar um espaço de diálogo sobre acessibilidade, tanto dentro quanto fora das organizações, com o objetivo de tornar os ambientes mais inclusivos para todas as pessoas.</p>
+    <div class="col-12 col-md">
+        <h3 id="missao" class="mt-5">Missão</h3>
+        <p>{% for item in site.data.sobre.missao %}{{item.texto}}{% endfor %}</p>
+    </div>
+    <div class="col-12 col-md">
+        <h3 id="visao" class="mt-5">Vissão</h3>
+        <p>{% for item in site.data.sobre.visao %}{{item.texto}}{% endfor %}</p>
+    </div>
+    <div class="col-12">
+        <h3 id="valores" class="mt-5">Valores</h3>
+        <ul class="row">
+            <ul class="row">
+                <p>{% for item in site.data.sobre.valores %}
+                    <li class="my-4 col-6">
+                      <img width="96px" height="96px" src="{{item.icone}}" class="float-start me-3 mb-3 d-block" alt="{{item.alt}}">
+                         <strong>{{item.nome}}</strong><br>
+                      {{item.descricao}}
+                  </li>
+                    {% endfor %}
+            </ul>
+        </ul>
+    </div>
     
     <h3 id="naming" class="mt-5" lang="en">Naming</h3>
 
@@ -140,7 +162,7 @@ title: Guia de estilo da marca
     
     <table class="table table-hover mt-3 table-striped-columns">
       <thead>
-        <th scope="col">TIpo do logotipo</th>
+        <th scope="col">Tipo do logotipo</th>
         <th scope="col">Impresso (cm)</th>
         <th scope="col">Digital (px)</th>
       </thead>
@@ -149,7 +171,6 @@ title: Guia de estilo da marca
           <td score="row">Logo vertical</td>
           <td>1,5</td>
           <td>115</td>
-
         </tr>
         <tr>
           <td score="row">Logo horizontal</td>

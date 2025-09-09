@@ -1,0 +1,27 @@
+missao:
+  - texto: "Criar um espaço de diálogo sobre acessibilidade, tanto dentro quanto fora das organizações, com o objetivo de tornar os ambientes mais inclusivos para todas as pessoas."
+
+visao:
+  - texto: "Contribuir para que a acessibilidade seja vista como parte natural da vida cotidiana, ajudando a inspirar pequenas mudanças que, somadas, transformam a sociedade."
+
+valores:
+  - nome: "Empatia"
+    descricao: "ouvir, valorizar e dar espaço para diferentes vozes."
+    icone: "https://focoacessivel.com.br/img/values/empathy.png"
+    alt: "Ilustração representando duas mãos, uma em cima do lado direito e outra imagem do lado esquerdo, no meio um coração "
+  - nome: "Diversidade"
+    descricao: "reconhecer e valorizar múltiplas perspectivas e trajetórias."
+    icone: "https://focoacessivel.com.br/img/values/diversity.png"
+    alt: "Ilustração representando 3 pessoas, cada uma com uma cabeça de forma diferente, da esquerda para direita, hexagono, círculo e triangulo de cabeça para baixo"
+  - nome: "Acessibilidade/ Inclusão"
+    descricao: "tornar o conteúdo compreensível e disponível para todos"
+    icone: "https://focoacessivel.com.br/img/values/inclusion.png"
+    alt: "Ilustração de 3 pessoas se abraçando"
+  - nome: "Colaboração"
+    descricao: "somar forçar e construir em conjunto com pessoas, empresas e comunidades."
+    icone: "https://focoacessivel.com.br/img/values/collaboration.png"
+    alt: "Ilustração de duas cabeças cada uma apontada para um lado, a linha que forma as cabeças forma uma lâmpada no centro de uma das cabeças."
+  - nome: "Transparência/ Clareza"
+    descricao: "comunicar de forma simples, acessível, clara e honesta."
+    icone: "https://focoacessivel.com.br/img/values/clarity.png"
+    alt: "Ilustração de um olho aberto"
